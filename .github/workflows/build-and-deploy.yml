@@ -1,0 +1,85 @@
+name: build-and-deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 19 * * *'  # UTC 19:00 = Beijing 03:00 daily
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install typst
+        run: |
+          curl -fsSL https://github.com/typst/typst/releases/download/v0.13.0/typst-x86_64-unknown-linux-musl.tar.xz -o typst.tar.xz
+          tar -xf typst.tar.xz
+          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/
+          typst --version
+
+      - name: Fetch Noto CJK font
+        run: |
+          mkdir -p fonts
+          curl -fsSL "https://github.com/notofonts/noto-cjk/raw/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf" -o fonts/NotoSansCJKsc-Regular.otf || true
+          curl -fsSL "https://github.com/notofonts/noto-cjk/raw/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Bold.otf"    -o fonts/NotoSansCJKsc-Bold.otf    || true
+          curl -fsSL "https://github.com/notofonts/noto-cjk/raw/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Medium.otf"  -o fonts/NotoSansCJKsc-Medium.otf  || true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Regenerate today's snapshot
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          python3 scripts/build_resume.py --date "$TODAY"
+          typst compile --root . --font-path fonts templates/build/${TODAY}-general.typ resumes/${TODAY}-general.pdf || true
+          typst compile --root . --font-path fonts templates/build/${TODAY}-deepseek.typ resumes/${TODAY}-deepseek.pdf || true
+          cp resumes/${TODAY}-*.pdf homepage/resume/ 2>/dev/null || true
+
+      - name: Refresh latest symlinks
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          [ -f "homepage/resume/${TODAY}-general.pdf"  ] && cp "homepage/resume/${TODAY}-general.pdf"  homepage/resume/latest-general.pdf
+          [ -f "homepage/resume/${TODAY}-deepseek.pdf" ] && cp "homepage/resume/${TODAY}-deepseek.pdf" homepage/resume/latest-deepseek.pdf
+
+      - name: Update manifest
+        run: python3 scripts/update_manifest.py
+
+      - name: Commit refreshed artifacts
+        run: |
+          git config user.name  "career-log-bot"
+          git config user.email "action@github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "auto: refresh $(date +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: homepage
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

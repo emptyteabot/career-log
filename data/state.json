@@ -1,0 +1,76 @@
+{
+  "as_of": "2026-08-03",
+  "internship": {
+    "start": "2026-06-17",
+    "expected_end": "2026-12-17",
+    "company": "字节跳动 · Data-AML · 火山方舟",
+    "role": "技术文档实习生（Agent 协作基建方向）",
+    "mentor": "雷宇宁",
+    "pm": "付萌"
+  },
+  "hard_numbers": {
+    "mr_merged_total": 16,
+    "mr_by_repo": {
+      "aml-qa/arkcli-eval-kit": [8, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73],
+      "machinelearning/arkcli": [379, 400, 413],
+      "tools/Ark_doc": [1500, 1752, 1782]
+    },
+    "eval_kit": {
+      "total_cases": 215,
+      "chen_owned": 141,
+      "xindong_owned": 74,
+      "skills_covered": 22
+    },
+    "pass_rate": {
+      "v10": {"cli_version": "1.0.9",  "cases": 140, "pct": 100.0, "detail": "83/83 real pass"},
+      "v11": {"cli_version": "1.0.11", "cases": 140, "pct": 97.6},
+      "v12": {"cli_version": "1.0.11", "cases": 215, "pct": 79.2, "note": "chen own 部分仍 ~90%"}
+    },
+    "highlights": [
+      "arkcli MR!413 · 5 处 SKILL description 强化 (resources/helper/doctor/gen/usage)",
+      "kit MR!66 · Runner regex bug 双修",
+      "kit MR!68 · BP 1.0.11 alignment (billing/understand/custommodel)",
+      "kit MR!72 · billing 截断 gate case",
+      "kit MR!73 · v12 fail 10 条修 (08-03 当天)",
+      "arkcli MR!400 · 淑华 custommodel zip merge",
+      "Ark_doc MR!1500 · 30 MA API .code.md sidecar",
+      "Ark_doc MR!1752 + MR!1782 · MA hide + input_schema",
+      "arkcli MR!379 · MA SkillHub cleanup 3 处",
+      "SSO 5 天 debug + memory 沉淀 + 2 个 OAuth client_id 分析",
+      "kit reference doc (R1nJdkoA) + 飞书扫 doc (QhICdgVKJ)"
+    ]
+  },
+  "sidebar_stats": {
+    "xhs_posts": 179,
+    "xhs_impressions_wan": 48.4,
+    "xhs_interactions_wan": 3.72,
+    "xhs_dev_followers": 979,
+    "xhs_likes_wan": 2.5,
+    "internships_completed": 4
+  },
+  "affiliations": [
+    {"org": "字节跳动 · Data-AML 火山方舟", "role": "技术文档实习生 · Agent 工程", "start": "2026-06", "end": "至今"},
+    {"org": "DeepWisdom (MetaGPT 团队)",   "role": "Agent 产品经理实习",           "start": "2026-03", "end": "2026-04"},
+    {"org": "BYDFi Exchange",                "role": "CEO 办公室 AI 效率实习",       "start": "2025-12", "end": "2026-02"},
+    {"org": "卓创资讯",                       "role": "AI 工程师 / 算法实习",         "start": "2025-07", "end": "2025-12"}
+  ],
+  "projects": [
+    {"name": "LeadPulse", "url": "https://leadpulsecgi.com",       "desc": "线索提取 Agent · FastAPI + Next.js + LLM API · Prompt 路由 + 规则标签 + 人工确认"},
+    {"name": "AgentHelpJob", "url": "https://agenthelpjob.com",    "desc": "求职辅助 Agent · JD 解析 / 简历匹配 / 材料生成 / 投递追踪"},
+    {"name": "arkcli BP eval-kit", "url": null,                    "desc": "字节 arkcli BytePlus 版评测框架 · 22 skill × 215 case · 3 版 pass rate"},
+    {"name": "yinghua-cortex", "url": null,                        "desc": "飞书签名 agent · Mac launchd 15min tick · 自动扫消息 + 摘要"},
+    {"name": "Multi-Agent 可靠性评测", "url": null,                "desc": "80/220 样本 · single/majority/log-odds/debate 四架构对照 · Wilson CI + McNemar test"}
+  ],
+  "identity": {
+    "name_cn": "陈盈桦",
+    "name_en": "Ian Chen",
+    "school": "厦门大学 经济学院 经济统计学 2024 级",
+    "grade": "大二",
+    "hometown": "贵州六盘水",
+    "story": "大二 · 贵州六盘水 · 家庭困难 · 4 段实习自养 · 用 Claude Code / Codex CLI 每天做真交付",
+    "email": "13398580812@163.com",
+    "phone": "13398580812",
+    "github": "emptyteabot",
+    "xhs": "ian (420404210)"
+  }
+}

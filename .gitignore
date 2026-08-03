@@ -1,0 +1,25 @@
+# Raw lark data & tokens
+data/*/lark_*.json
+data/**/*.log
+data/launchd.*.log
+
+# Env / secrets
+.env
+.env.*
+cookies.txt
+.credentials
+*.pem
+
+# Local build artifacts
+templates/build/*.typ
+!templates/build/.gitkeep
+
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>陈盈桦 Ian Chen · AI 工程 · Agent 产品方向</title>
+<meta name="description" content="厦门大学经济统计学 · 大二在读 · 字节跳动 火山方舟 AI 工程实习中。Agent Harness / Tool Use / Context Engineering 方向。每日自动更新的开放简历。"/>
+<meta property="og:title" content="陈盈桦 Ian Chen · career-log"/>
+<meta property="og:description" content="Agent 工程 · 每日快照 · 简历时间线 · 联系入口"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+<canvas id="bg"></canvas>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="dot"></span>
+    <span class="brand-name">陈盈桦 · career-log</span>
+  </div>
+  <nav>
+    <a href="#now">现状</a>
+    <a href="#numbers">数字</a>
+    <a href="#resume">简历</a>
+    <a href="#projects">项目</a>
+    <a href="#story">故事</a>
+    <a href="#contact">联系</a>
+    <button id="theme-toggle" title="切换主题">◐</button>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">大二在读 · 字节跳动 火山方舟 实习中 · 每日自动更新</p>
+      <h1><span class="cn">陈盈桦</span> <span class="en">Ian Chen</span></h1>
+      <p class="tagline">AI 工程 &amp; Agent 产品方向 · 厦门大学 经济统计学</p>
+      <p class="sub">用 Claude Code / Codex CLI / Cursor 每天做真交付。在字节方舟做 Agent Harness 相关工程。</p>
+      <div class="cta-row">
+        <a class="btn primary" href="resume/latest-general.pdf" download>下载最新简历 (PDF)</a>
+        <a class="btn ghost" href="resume/latest-deepseek.pdf" download>DeepSeek 定向版</a>
+        <a class="btn ghost" href="resume/latest-mindmap.pdf" download>项目思维导图</a>
+      </div>
+      <p class="hero-meta"><span>最近快照：<time id="last-snap">2026-08-03</time></span> · <span id="days-in">入职第 47 天</span></p>
+    </div>
+    <div class="hero-scroll">▾</div>
+  </section>
+
+  <!-- NUMBERS -->
+  <section id="numbers" class="section">
+    <div class="section-head">
+      <span class="section-tag">01 · 硬产出数字</span>
+      <h2>Numbers speak</h2>
+    </div>
+    <div class="stats-grid" id="stats-grid">
+      <div class="stat"><div class="stat-value" data-target="16">0</div><div class="stat-label">MR merged · 跨 3 仓</div></div>
+      <div class="stat"><div class="stat-value" data-target="215">0</div><div class="stat-label">arkcli BP eval-kit 总 case</div></div>
+      <div class="stat"><div class="stat-value" data-target="141">0</div><div class="stat-label">chen own case 数</div></div>
+      <div class="stat"><div class="stat-value" data-target="22">0</div><div class="stat-label">评测覆盖 skill 数</div></div>
+      <div class="stat"><div class="stat-value" data-target="979">0</div><div class="stat-label">小红书垂直开发者粉丝</div></div>
+      <div class="stat"><div class="stat-value" data-target="4">0</div><div class="stat-label">完成实习段 · 全部 AI 方向</div></div>
+    </div>
+    <p class="rate-line">
+      <span class="chip">v10 · 100%</span>
+      <span class="chip">v11 · 97.6%</span>
+      <span class="chip">v12 · 79.2%</span>
+      <span class="rate-desc">arkcli BP eval-kit 3 版 pass rate</span>
+    </p>
+  </section>
+
+  <!-- NOW -->
+  <section id="now" class="section">
+    <div class="section-head">
+      <span class="section-tag">02 · 现在正在做</span>
+      <h2>Now</h2>
+    </div>
+    <div class="now-grid">
+      <article class="card">
+        <h3>arkcli BytePlus 评测框架</h3>
+        <p>08-10 上线冲刺。3 版 pass rate 已产出，v12 79.2% 需回升到 ≥95%。付萌 PM · 雷宇宁 MT。</p>
+        <div class="tags"><span>Python</span><span>Go</span><span>skill-e2e</span><span>opencode</span></div>
+      </article>
+      <article class="card">
+        <h3>Managed Agent API 文档</h3>
+        <p>40 篇 API Doc ID/UrlCode 绑定完成 · MR!1500 · MR!1752 · MR!1782 已合入 tools/Ark_doc。</p>
+        <div class="tags"><span>Ark_doc</span><span>MA</span><span>Doc</span></div>
+      </article>
+      <article class="card">
+        <h3>Agent Harness 工具链</h3>
+        <p>Claude Code + Codex CLI + Playwright 组合平替内部 CUA · yinghua-cortex 自动化系统 · daily-digest。</p>
+        <div class="tags"><span>Claude Code</span><span>Codex CLI</span><span>Playwright</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="section">
+    <div class="section-head">
+      <span class="section-tag">03 · 简历时间线</span>
+      <h2>Resume timeline</h2>
+      <p class="section-sub">每天自动快照，PDF 归档。任选一天下载看当时状态。</p>
+    </div>
+    <div class="resume-list" id="resume-list">
+      <!-- populated by JS from resumes-manifest.json -->
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-head">
+      <span class="section-tag">04 · 精选项目</span>
+      <h2>Selected projects</h2>
+    </div>
+    <div class="project-grid">
+      <a class="project" href="https://leadpulsecgi.com" target="_blank" rel="noopener">
+        <h3>LeadPulse</h3>
+        <p>线索提取 Agent · FastAPI + Next.js + LLM API · Prompt 路由 + 规则标签 + 人工确认。</p>
+        <span class="link">leadpulsecgi.com →</span>
+      </a>
+      <a class="project" href="https://agenthelpjob.com" target="_blank" rel="noopener">
+        <h3>AgentHelpJob</h3>
+        <p>求职辅助 Agent · JD 解析 / 简历匹配 / 材料生成 / 投递追踪。</p>
+        <span class="link">agenthelpjob.com →</span>
+      </a>
+      <div class="project">
+        <h3>arkcli BP eval-kit</h3>
+        <p>字节 arkcli BytePlus 版评测框架 · 22 skill × 215 case · 3 版 pass rate。08-10 上线。</p>
+        <span class="link muted">byted internal · code.byted.org</span>
+      </div>
+      <div class="project">
+        <h3>Multi-Agent 可靠性评测</h3>
+        <p>80 校准 + 220 测试样本 · single / majority / log-odds / debate 四架构对照 · Wilson CI + McNemar test。</p>
+        <span class="link muted">DeepWisdom (MetaGPT) 内部</span>
+      </div>
+      <div class="project">
+        <h3>yinghua-cortex</h3>
+        <p>飞书签名 Agent · Mac launchd 15min tick · 自动扫消息 + 摘要 + 决策提示。</p>
+        <span class="link muted">personal daemon</span>
+      </div>
+      <a class="project" href="https://github.com/emptyteabot/career-log" target="_blank" rel="noopener">
+        <h3>career-log（本站）</h3>
+        <p>每日快照 + 简历自动生成 + PDF 归档 + GitHub Pages · 你现在看的这个东西的源码。</p>
+        <span class="link">github.com/emptyteabot/career-log →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" class="section story">
+    <div class="section-head">
+      <span class="section-tag">05 · 关于我</span>
+      <h2>Story</h2>
+    </div>
+    <div class="story-body">
+      <p>贵州六盘水人，父母外出务工，妹妹 5 岁。厦门大学经济学院经济统计学 2024 级在读。从大一暑假开始连续 4 段实习自己养自己。</p>
+      <p>选做 AI 工程 / Agent 方向，不是因为热门，是因为它是唯一一个我可以<span class="hl">用大二的时间做出大四的东西</span>的地方。用 Claude Code / Codex CLI 每天做真交付，做完还在小红书 <a href="https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9" target="_blank" rel="noopener">ian (420404210)</a> 讲给别人 —— 179 篇 · 48.4 万曝光 · 979 垂直开发者粉。</p>
+      <p>这个网站是自动生成的：每天凌晨扫飞书消息、拉 code.byted.org MR 列表、备份记忆、重新 render Typst 简历、编译 PDF、push 到 GitHub Pages。<span class="hl">离职当天我可以关电脑走人，历史全在仓库里。</span></p>
+      <p class="story-quote">"能跑起来 + 数据说话 + 讲清楚" —— 三件事。</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="section-head">
+      <span class="section-tag">06 · 联系</span>
+      <h2>Reach out</h2>
+      <p class="section-sub">在招 / 猎头 / 合作 / 想聊都欢迎，24 小时内回。</p>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:13398580812@163.com?subject=[career-log]%20&body=%E4%BD%A0%E5%A5%BD%E9%99%88%E7%9B%88%E6%A1%A6%EF%BC%8C%E6%88%91%E6%98%AF%20...">
+        <div class="contact-icon">✉</div>
+        <div class="contact-label">Email</div>
+        <div class="contact-value">13398580812@163.com</div>
+      </a>
+      <a class="contact-card" href="tel:+8613398580812">
+        <div class="contact-icon">☎</div>
+        <div class="contact-label">Phone / WeChat</div>
+        <div class="contact-value">13398580812</div>
+      </a>
+      <a class="contact-card" href="https://github.com/emptyteabot" target="_blank" rel="noopener">
+        <div class="contact-icon">◈</div>
+        <div class="contact-label">GitHub</div>
+        <div class="contact-value">emptyteabot</div>
+      </a>
+      <a class="contact-card" href="https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9" target="_blank" rel="noopener">
+        <div class="contact-icon">◉</div>
+        <div class="contact-label">小红书</div>
+        <div class="contact-value">ian (420404210)</div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 陈盈桦 · career-log</span>
+    <span>Automatically updated · Last: <time id="last-snap-footer">2026-08-03</time></span>
+    <a href="https://github.com/emptyteabot/career-log" target="_blank" rel="noopener">Source ↗</a>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js" defer></script>
+<script src="assets/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+{
+  "snapshots": [
+    {
+      "date": "2026-06-17",
+      "day": 1,
+      "badge": "入职第 1 天"
+    },
+    {
+      "date": "2026-06-18",
+      "day": 2,
+      "badge": null
+    },
+    {
+      "date": "2026-06-19",
+      "day": 3,
+      "badge": null
+    },
+    {
+      "date": "2026-06-20",
+      "day": 4,
+      "badge": null
+    },
+    {
+      "date": "2026-06-21",
+      "day": 5,
+      "badge": null
+    },
+    {
+      "date": "2026-06-22",
+      "day": 6,
+      "badge": null
+    },
+    {
+      "date": "2026-06-23",
+      "day": 7,
+      "badge": null
+    },
+    {
+      "date": "2026-06-24",
+      "day": 8,
+      "badge": null
+    },
+    {
+      "date": "2026-06-25",
+      "day": 9,
+      "badge": null
+    },
+    {
+      "date": "2026-06-26",
+      "day": 10,
+      "badge": null
+    },
+    {
+      "date": "2026-06-27",
+      "day": 11,
+      "badge": null
+    },
+    {
+      "date": "2026-06-28",
+      "day": 12,
+      "badge": null
+    },
+    {
+      "date": "2026-06-29",
+      "day": 13,
+      "badge": null
+    },
+    {
+      "date": "2026-06-30",
+      "day": 14,
+      "badge": "CMA schema 爬完 49 接口"
+    },
+    {
+      "date": "2026-07-01",
+      "day": 15,
+      "badge": null
+    },
+    {
+      "date": "2026-07-02",
+      "day": 16,
+      "badge": null
+    },
+    {
+      "date": "2026-07-03",
+      "day": 17,
+      "badge": "MA API 文档立项 · 雷宇宁 P2P"
+    },
+    {
+      "date": "2026-07-04",
+      "day": 18,
+      "badge": null
+    },
+    {
+      "date": "2026-07-05",
+      "day": 19,
+      "badge": null
+    },
+    {
+      "date": "2026-07-06",
+      "day": 20,
+      "badge": null
+    },
+    {
+      "date": "2026-07-07",
+      "day": 21,
+      "badge": null
+    },
+    {
+      "date": "2026-07-08",
+      "day": 22,
+      "badge": null
+    },
+    {
+      "date": "2026-07-09",
+      "day": 23,
+      "badge": null
+    },
+    {
+      "date": "2026-07-10",
+      "day": 24,
+      "badge": null
+    },
+    {
+      "date": "2026-07-11",
+      "day": 25,
+      "badge": null
+    },
+    {
+      "date": "2026-07-12",
+      "day": 26,
+      "badge": null
+    },
+    {
+      "date": "2026-07-13",
+      "day": 27,
+      "badge": null
+    },
+    {
+      "date": "2026-07-14",
+      "day": 28,
+      "badge": null
+    },
+    {
+      "date": "2026-07-15",
+      "day": 29,
+      "badge": "MR!1500 · 30 MA API sidecar merged"
+    },
+    {
+      "date": "2026-07-16",
+      "day": 30,
+      "badge": null
+    },
+    {
+      "date": "2026-07-17",
+      "day": 31,
+      "badge": null
+    },
+    {
+      "date": "2026-07-18",
+      "day": 32,
+      "badge": null
+    },
+    {
+      "date": "2026-07-19",
+      "day": 33,
+      "badge": null
+    },
+    {
+      "date": "2026-07-20",
+      "day": 34,
+      "badge": null
+    },
+    {
+      "date": "2026-07-21",
+      "day": 35,
+      "badge": "arkcli BP 项目立项 · MR!8 首交付 · 12 skill × 52 case"
+    },
+    {
+      "date": "2026-07-22",
+      "day": 36,
+      "badge": null
+    },
+    {
+      "date": "2026-07-23",
+      "day": 37,
+      "badge": null
+    },
+    {
+      "date": "2026-07-24",
+      "day": 38,
+      "badge": null
+    },
+    {
+      "date": "2026-07-25",
+      "day": 39,
+      "badge": "BP MCP mvp 联调"
+    },
+    {
+      "date": "2026-07-26",
+      "day": 40,
+      "badge": null
+    },
+    {
+      "date": "2026-07-27",
+      "day": 41,
+      "badge": null
+    },
+    {
+      "date": "2026-07-28",
+      "day": 42,
+      "badge": "arkcli-bp 海外产品承接 · 复项回执"
+    },
+    {
+      "date": "2026-07-29",
+      "day": 43,
+      "badge": null
+    },
+    {
+      "date": "2026-07-30",
+      "day": 44,
+      "badge": "付萌 v2 评测方案对齐"
+    },
+    {
+      "date": "2026-07-31",
+      "day": 45,
+      "badge": "215 case 覆盖 · 王鑫栋 P0 case 挑战"
+    },
+    {
+      "date": "2026-08-01",
+      "day": 46,
+      "badge": "v10 pass rate 100% baseline"
+    },
+    {
+      "date": "2026-08-02",
+      "day": 47,
+      "badge": "v11 pass rate 97.6% · 1.0.11 alignment"
+    },
+    {
+      "date": "2026-08-03",
+      "day": 48,
+      "badge": "v12 79.2% · 215 case · 16 MR merged"
+    }
+  ]
+}
