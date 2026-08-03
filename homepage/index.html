@@ -179,20 +179,8 @@
 
     <div class="narrative-grid">
       <div class="narrative">
-        <p data-i18n-zh="从 6 月 17 日开始，我在为 arkcli 的 BytePlus 版本造评测框架 —— 一组按 skill 分层的 agent runner，代表开发者去跟 LLM 打交道。框架 8 月 10 日上线。截止 8 月 3 日覆盖 <strong>22 个 skill</strong> 共 <strong>215 个 case</strong>，跑过 3 版 baseline：v10 <em>100 %</em>，v11 <em>97.6 %</em>，v12 在王鑫栋加了 74 个 case 之后跌到 <em>79.2 %</em>。我 own 其中 141 个 case，今天在 <a href='#' class='mr'>MR!73</a> 修 10 个 v12 回归。" data-i18n-en="Since June 17 I've been building an evaluation harness for <code>arkcli</code>'s BytePlus release — a fleet of skill-scoped agent runners that talk to LLMs on behalf of developers. The harness ships on <strong>Aug 10</strong>. As of Aug 3 it covers <strong>22 skills</strong> across <strong>215 cases</strong>, with three baselines: v10 at <em>100 %</em>, v11 at <em>97.6 %</em>, and v12 at <em>79.2 %</em> after Wang Xindong added 74 more cases. I own 141 of them; today I'm fixing 10 v12 regressions in <a href='#' class='mr'>MR!73</a>.">从 6 月 17 日开始，我在为 arkcli 的 BytePlus 版本造评测框架 —— 一组按 skill 分层的 agent runner，代表开发者去跟 LLM 打交道。框架 8 月 10 日上线。截止 8 月 3 日覆盖 <strong>22 个 skill</strong> 共 <strong>215 个 case</strong>，跑过 3 版 baseline：v10 <em>100 %</em>，v11 <em>97.6 %</em>，v12 在王鑫栋加了 74 个 case 之后跌到 <em>79.2 %</em>。我 own 其中 141 个 case，今天在 <a href='#' class='mr'>MR!73</a> 修 10 个 v12 回归。</p>
+        <p data-i18n-zh="从 6 月 17 日开始，我在为 arkcli 的 BytePlus 版本造评测框架 —— 一组按 skill 分层的 agent runner，代表开发者去跟 LLM 打交道。框架 8 月 10 日上线。截止 8 月 3 日覆盖 <strong>22 个 skill</strong> 共 <strong>215 个 case</strong>，跑过 3 版 baseline：v10 <em>100%</em>，v11 <em>97.6%</em>，v12 在王鑫栋加了 74 个 case 之后跌到 <em>79.2%</em>。我 own 其中 141 个 case，今天在修 10 个 v12 回归。" data-i18n-en="Since June 17 I've been building an evaluation harness for arkcli's BytePlus release — a fleet of skill-scoped agent runners that talk to LLMs on behalf of developers. The harness ships on <strong>Aug 10</strong>. As of Aug 3 it covers <strong>22 skills</strong> across <strong>215 cases</strong>, with three baselines: v10 at <em>100%</em>, v11 at <em>97.6%</em>, and v12 at <em>79.2%</em> after Wang Xindong added 74 more cases. I own 141 of them; today I'm fixing 10 v12 regressions.">从 6 月 17 日开始，我在为 arkcli 的 BytePlus 版本造评测框架 —— 一组按 skill 分层的 agent runner，代表开发者去跟 LLM 打交道。框架 8 月 10 日上线。截止 8 月 3 日覆盖 <strong>22 个 skill</strong> 共 <strong>215 个 case</strong>，跑过 3 版 baseline：v10 <em>100%</em>，v11 <em>97.6%</em>，v12 在王鑫栋加了 74 个 case 之后跌到 <em>79.2%</em>。我 own 其中 141 个 case，今天在修 10 个 v12 回归。</p>
       </div>
-      <figure class="fig">
-        <div class="fig-frame">
-          <div class="fig-window">
-            <div class="fig-window-bar"><i></i><i></i><i></i><span>arkcli-eval-kit · verdict pipeline</span></div>
-            <pre id="verdict-diagram"></pre>
-          </div>
-        </div>
-        <figcaption data-i18n-zh="图 1 · L1 preflight → L2 exec → L3 assertion · 3 版 baseline" data-i18n-en="Fig. 1 · L1 preflight → L2 exec → L3 assertion · 3 baselines">图 1 · L1 preflight → L2 exec → L3 assertion · 3 版 baseline</figcaption>
-      </figure>
-    </div>
-
-    <div class="narrative-grid alt">
       <figure class="fig">
         <div class="fig-frame chart">
           <svg viewBox="0 0 400 200" width="100%" height="220" preserveAspectRatio="xMidYMid meet">
@@ -224,10 +212,13 @@
             <text x="310" y="95" fill="#f0f6fc" font-size="11" text-anchor="middle" font-weight="600">79.2%</text>
           </svg>
         </div>
-        <figcaption data-i18n-zh="图 2 · 3 版 pass rate 曲线。v12 加 74 case 之后回落，正在修" data-i18n-en="Fig. 2 · Pass rate across 3 baselines. v12 dipped after 74 new cases; fixing.">图 2 · 3 版 pass rate 曲线。v12 加 74 case 之后回落，正在修</figcaption>
+        <figcaption data-i18n-zh="图 · 3 版 pass rate 曲线。v12 加 74 case 之后回落，正在修" data-i18n-en="Pass rate across 3 baselines. v12 dipped after 74 new cases; fixing.">图 · 3 版 pass rate 曲线。v12 加 74 case 之后回落，正在修</figcaption>
       </figure>
+    </div>
+
+    <div class="narrative-grid alt narrative-single">
       <div class="narrative">
-        <p data-i18n-zh="有意思的是 v11 → v12 的回归不是"case 变严"而是"CLI 变了"—— <code>--project</code> 换成 <code>--tenant</code>、模型名从 <code>doubao-seed-2-0</code> 漂到 <code>doubao-seed-2-1-260628</code>，assertion regex 没跟上。这类事 harness engineer 每天都在做：<em>识别哪个抖动是真信号，哪个是测试脏</em>。" data-i18n-en="Interestingly the v11 → v12 regressions are not "cases got stricter" but "the CLI moved" — <code>--project</code> renamed to <code>--tenant</code>, model IDs drifting from <code>doubao-seed-2-0</code> to <code>doubao-seed-2-1-260628</code>, assertion regex out of date. This is the daily work of a harness engineer: <em>separating real signal from test-side drift</em>.">有意思的是 v11 → v12 的回归不是"case 变严"而是"CLI 变了"—— <code>--project</code> 换成 <code>--tenant</code>、模型名从 <code>doubao-seed-2-0</code> 漂到 <code>doubao-seed-2-1-260628</code>，assertion regex 没跟上。这类事 harness engineer 每天都在做：<em>识别哪个抖动是真信号，哪个是测试脏</em>。</p>
+        <p data-i18n-zh="有意思的是 v11 → v12 的回归不是"case 变严"而是 CLI 参数变了 —— 一些 flag 改名，模型 ID 漂移，assertion regex 没跟上。这类事 harness engineer 每天都在做：<em>识别哪个抖动是真信号，哪个是测试脏</em>。" data-i18n-en="Interestingly the v11 → v12 regressions are not stricter cases but CLI parameter changes — flags renamed, model IDs drifting, assertion regex out of date. This is the daily work of a harness engineer: <em>separating real signal from test-side drift</em>.">有意思的是 v11 → v12 的回归不是"case 变严"而是 CLI 参数变了 —— 一些 flag 改名，模型 ID 漂移，assertion regex 没跟上。这类事 harness engineer 每天都在做：<em>识别哪个抖动是真信号，哪个是测试脏</em>。</p>
       </div>
     </div>
   </div>
@@ -243,11 +234,11 @@
       <li>
         <div class="ship-meta"><span class="ship-date">2026-08-03</span> <span class="ship-tag">arkcli-eval-kit</span></div>
         <h3><a href="https://code.byted.org/aml-qa/arkcli-eval-kit" target="_blank" rel="noopener">MR!73 · v12 fix batch, 10 cases</a></h3>
-        <p data-i18n-zh="从 v11 → v12 的 10 个回归复现。定位到 6 个 model-id 漂移，3 个 --tenant flag 缺失，1 个 assertion regex 里塞了 CRLF。现在在跑 v12.1。" data-i18n-en="Reproduced 10 regressions from v11 → v12. Root-caused 6 to model-id drift, 3 to a missing <code>--tenant</code> flag on the auth prelude, 1 to a stray CRLF in an assertion regex. Re-running v12.1.">从 v11 → v12 的 10 个回归复现。定位到 6 个 model-id 漂移，3 个 --tenant flag 缺失，1 个 assertion regex 里塞了 CRLF。现在在跑 v12.1。</p>
+        <p data-i18n-zh="从 v11 → v12 的 10 个回归复现。定位到 6 个 model-id 漂移，3 个 tenant 参数缺失，1 个 assertion 里塞了不可见换行符。现在在跑 v12.1。" data-i18n-en="Reproduced 10 regressions from v11 → v12. Root-caused 6 to model-id drift, 3 to a missing tenant flag, 1 to a stray CRLF in an assertion. Re-running v12.1.">从 v11 → v12 的 10 个回归复现。定位到 6 个 model-id 漂移，3 个 tenant 参数缺失，1 个 assertion 里塞了不可见换行符。现在在跑 v12.1。</p>
       </li>
       <li>
         <div class="ship-meta"><span class="ship-date">2026-08-01</span> <span class="ship-tag">baseline</span></div>
-        <h3 data-i18n-zh="v10 baseline @ 100 %（83/83 real-pass），v11 @ 97.6 %" data-i18n-en="v10 baseline @ 100 % (83/83), v11 @ 97.6 %">v10 baseline @ 100 %（83/83 real-pass），v11 @ 97.6 %</h3>
+        <h3 data-i18n-zh="v10 baseline @ 100%（83/83 real-pass），v11 @ 97.6%" data-i18n-en="v10 baseline @ 100% (83/83), v11 @ 97.6%">v10 baseline @ 100%（83/83 real-pass），v11 @ 97.6%</h3>
         <p data-i18n-zh="第一次跑出全绿。v11 引入 BP-1.0.11 alignment，回归 2 个 case —— 期望输出的 shape 变了。" data-i18n-en="First fully-green run. v11 introduces BP-1.0.11 alignment; regressed 2 cases whose expected shape changed.">第一次跑出全绿。v11 引入 BP-1.0.11 alignment，回归 2 个 case —— 期望输出的 shape 变了。</p>
       </li>
       <li>
@@ -258,12 +249,12 @@
       <li>
         <div class="ship-meta"><span class="ship-date">2026-07-28</span> <span class="ship-tag">arkcli-eval-kit</span></div>
         <h3><a href="#" class="mr" onclick="return false">MR!66 · runner regex double-fix</a></h3>
-        <p data-i18n-zh="Regex 编译带 re.MULTILINE 但测试用单行拼接 → false negative。修了编译 flag，也修了掩盖它的 fixture。" data-i18n-en="Regex compiled with re.MULTILINE but tested against a single-line join → false negatives. Fixed the compile flag AND the fixture masking it.">Regex 编译带 re.MULTILINE 但测试用单行拼接 → false negative。修了编译 flag，也修了掩盖它的 fixture。</p>
+        <p data-i18n-zh="Regex 编译带多行标志但测试用单行拼接 → false negative。修了编译 flag，也修了掩盖它的 fixture。" data-i18n-en="Regex compiled with multi-line flag but tested against a single-line join → false negatives. Fixed the compile flag and the fixture masking it.">Regex 编译带多行标志但测试用单行拼接 → false negative。修了编译 flag，也修了掩盖它的 fixture。</p>
       </li>
       <li>
         <div class="ship-meta"><span class="ship-date">2026-07-15</span> <span class="ship-tag">tools/Ark_doc</span></div>
-        <h3><a href="https://code.byted.org/tools/Ark_doc/merge_requests/1500" target="_blank" rel="noopener">MR!1500 · 30 MA-API .code.md sidecar</a></h3>
-        <p data-i18n-zh="给 30 篇 Managed Agents API 文档补 .code.md sidecar，让 doc-pipeline 能 hydrate Python/Go/curl 代码 tab。" data-i18n-en="Backfilled .code.md sidecar for 30 Managed Agents API pages so the doc-pipeline could hydrate Python/Go/curl code tabs.">给 30 篇 Managed Agents API 文档补 .code.md sidecar，让 doc-pipeline 能 hydrate Python/Go/curl 代码 tab。</p>
+        <h3><a href="https://code.byted.org/tools/Ark_doc/merge_requests/1500" target="_blank" rel="noopener">MR!1500 · 30 篇 MA-API 代码 sidecar</a></h3>
+        <p data-i18n-zh="给 30 篇 Managed Agents API 文档补齐代码 sidecar 文件，让文档流水线能自动 hydrate Python/Go/curl 代码 tab。" data-i18n-en="Backfilled code sidecar files for 30 Managed Agents API pages so the doc-pipeline could hydrate Python/Go/curl tabs.">给 30 篇 Managed Agents API 文档补齐代码 sidecar 文件，让文档流水线能自动 hydrate Python/Go/curl 代码 tab。</p>
       </li>
     </ol>
   </div>
@@ -341,7 +332,7 @@
 
       <p data-i18n-zh="我对 Agent 工程里那些不性感的部分特别感兴趣 —— tool call 会怎么失败、context 会怎么漂、harness 在模型回来一堆乱码 JSON 时怎么恢复、v11 到底比 v10 好多少（不骗自己）。这些都是部署之后才知道的事。" data-i18n-en="I'm interested in the mundane parts of agent engineering — how tool calls fail, how contexts drift, how a harness recovers when the model returns garbled JSON, whether v11 is <em>actually</em> better than v10. The parts you find out only when you deploy.">我对 Agent 工程里那些不性感的部分特别感兴趣 —— tool call 会怎么失败、context 会怎么漂、harness 在模型回来一堆乱码 JSON 时怎么恢复、v11 到底比 v10 好多少（不骗自己）。这些都是部署之后才知道的事。</p>
 
-      <p data-i18n-zh="业余在小红书 <a href='https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9'>ian · 420404210</a> 输出 179 篇 · 48.4 万曝光 · 3.72 万互动 · 979 垂直开发者粉。写过的东西：Claude Code / Codex / Cursor 实战、Multi-Agent 边界、Vibe Coding 案例。" data-i18n-en="I write on 小红书 <a href='https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9'>ian · 420404210</a> — 179 posts, 484k impressions, 37.2k interactions, 979 dev followers. Topics: Claude Code / Codex / Cursor field notes, multi-agent boundaries, Vibe Coding case studies.">业余在小红书 <a href="https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9">ian · 420404210</a> 输出 179 篇 · 48.4 万曝光 · 3.72 万互动 · 979 垂直开发者粉。写过的东西：Claude Code / Codex / Cursor 实战、Multi-Agent 边界、Vibe Coding 案例。</p>
+      <p data-i18n-zh="业余在小红书 <a href='https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9'>ian · 420404210</a> 和抖音上做 <em>AI 实习博主</em> · 小红书 <strong>1300</strong> 粉、抖音 <strong>1900</strong> 粉，写 Claude Code / Codex / Cursor 实战、Multi-Agent 边界、Vibe Coding 案例，也讲我在字节做 harness 每天踩什么坑。" data-i18n-en="Off-hours I'm building an audience around <em>AI-internship diary</em> content — on 小红书 <a href='https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9'>ian · 420404210</a> (~1,300 followers) and 抖音 (~1,900 followers). I write about Claude Code / Codex / Cursor field notes, multi-agent boundaries, Vibe Coding, and the messy parts of doing harness eng inside ByteDance.">业余在小红书 <a href="https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9">ian · 420404210</a> 和抖音上做 <em>AI 实习博主</em> · 小红书 <strong>1300</strong> 粉、抖音 <strong>1900</strong> 粉，写 Claude Code / Codex / Cursor 实战、Multi-Agent 边界、Vibe Coding 案例，也讲我在字节做 harness 每天踩什么坑。</p>
     </div>
   </div>
 </section>
@@ -361,7 +352,8 @@
       <div class="contact-item"><div class="ci-label">Email</div><a class="ci-value" href="mailto:13398580812@163.com">13398580812@163.com</a></div>
       <div class="contact-item"><div class="ci-label">Phone / WeChat</div><a class="ci-value" href="tel:+8613398580812">13398580812</a></div>
       <div class="contact-item"><div class="ci-label">GitHub</div><a class="ci-value" href="https://github.com/emptyteabot" target="_blank" rel="noopener">emptyteabot</a></div>
-      <div class="contact-item"><div class="ci-label" data-i18n-zh="小红书" data-i18n-en="Xiaohongshu">小红书</div><a class="ci-value" href="https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9" target="_blank" rel="noopener">ian · 420404210</a></div>
+      <div class="contact-item"><div class="ci-label" data-i18n-zh="小红书 · AI 实习博主" data-i18n-en="Xiaohongshu · AI intern blogger">小红书 · AI 实习博主</div><a class="ci-value" href="https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9" target="_blank" rel="noopener">ian · 420404210 · 1.3k</a></div>
+      <div class="contact-item"><div class="ci-label" data-i18n-zh="抖音 · AI 实习博主" data-i18n-en="抖音 · AI intern blogger">抖音 · AI 实习博主</div><span class="ci-value">@ian · 1.9k</span></div>
     </div>
   </div>
 </section>
