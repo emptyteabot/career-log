@@ -1,0 +1,789 @@
+{
+  "generated_at": "2026-08-03T08:18:46Z",
+  "window": {
+    "start": "2026-06-17",
+    "end": "2026-08-03"
+  },
+  "total_events": 33291,
+  "days": {
+    "2026-06-17": {
+      "total": 8,
+      "kinds": {
+        "lark-mentioned": 7,
+        "lark-doc-authored": 1
+      },
+      "samples": {
+        "lark-mentioned": [
+          "雷宇宁 invited 陈盈桦 to the group. New members can view all chat history.",
+          "陈盈桦 joined {group_name}. New members can view all chat history.",
+          "陈盈桦 joined the group. New members can view messages sent after they joined.",
+          "@陈盈桦 欢迎欢迎[撒花]",
+          "欢迎 @陈盈桦 同学加入团队，盈桦在agent相关使用和开发上有不少经验，期待这段时间可以和大家一起增强方舟文档的AI协同工具和流水线"
+        ],
+        "lark-doc-authored": [
+          "知识问答"
+        ]
+      }
+    },
+    "2026-06-18": {
+      "total": 7,
+      "kinds": {
+        "lark-mentioned": 1,
+        "lark-doc-authored": 6
+      },
+      "samples": {
+        "lark-mentioned": [
+          "<p>@_all 加班申请提交链接 [internal-link] </p><p>注意加班事由需要讲清楚：</p><p>加班做什么，加班产出是什么，以及为什么加班</p><p>譬如：</p><p>co"
+        ],
+        "lark-doc-authored": [
+          "Plan 文档监控与文档验证方案",
+          "Agent / Coding Plan 核对",
+          "Agent / Coding Plan 文档问题处理结论 - 最终版",
+          "《Agent / Coding Plan 文档检查结果 - 第一轮》",
+          "Agent_Coding_Plan_文档检查结果_第一轮.md"
+        ]
+      }
+    },
+    "2026-06-19": {
+      "total": 15,
+      "kinds": {
+        "lark-mentioned": 8,
+        "lark-doc-authored": 4,
+        "gh-created": 2,
+        "gh-pushed": 1
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@陈盈桦 mr发这里吧",
+          "范子卿 invited 陈盈桦 to the group. New members can view all chat history.",
+          "陈盈桦 invited 朱晓敏 to the group. New members can view all chat history.",
+          "陈盈桦 invited 自定义机器人 to the group. New members can view all chat history.",
+          "陈盈桦 started the group chat."
+        ],
+        "lark-doc-authored": [
+          "EdgeOne Makers 小红书发布素材 v3｜ian",
+          "EdgeOne Makers 小红书真实预览 v2｜ian",
+          "EdgeOne Makers 小红书首发实测笔记｜ian 审稿版",
+          "Ark CLI docs search MVP 调研与验证报告"
+        ],
+        "gh-created": [
+          "-room",
+          "agent-arch-analyzer-0619"
+        ],
+        "gh-pushed": [
+          "agent-arch-analyzer-0619"
+        ]
+      }
+    },
+    "2026-06-20": {
+      "total": 30,
+      "kinds": {
+        "lark-mentioned": 7,
+        "lark-doc-authored": 23
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@陈盈桦 我觉得你先出一份关于这个这些命指令都有哪些能力的文档吧 然后可能要跟付萌对一下 要不要在force之前做一个针对它的skill",
+          "@陈盈桦 我的意思是它现在没有skill来指导他应该怎么调",
+          "@陈盈桦 那现在其实相当于用户只能没有办法在AI Agent里面使用到它",
+          "@陈盈桦 现在状态是只有指令 没有skill对吧",
+          "@孟林昊 @陈盈桦 预期是 明晚发一个稳定的版本，包括你这 毕竟force就在下周二了 看是否可"
+        ],
+        "lark-doc-authored": [
+          "EdgeOne Makers 小红书合作内容 v25｜ian",
+          "EdgeOne Makers 小红书合作内容 v24｜ian",
+          "EdgeOne Makers 小红书合作内容 v23｜ian",
+          "EdgeOne Makers 小红书合作内容 v22｜ian",
+          "EdgeOne Makers 小红书合作内容 v21｜ian"
+        ]
+      }
+    },
+    "2026-06-21": {
+      "total": 9,
+      "kinds": {
+        "lark-mentioned": 7,
+        "workbench-doc": 1,
+        "gh-pushed": 1
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@陈盈桦 我用ai扫了一遍，确实意图有冲突 https://bytedance.larkoffice.com/docx/AaDkdEjpOo4M7qxBC4EcjtVKnAc\n你看下 ，我的判断是sk",
+          "@王鑫栋 @蒲其刚 @陈盈桦 @付萌 @南芸 @张顺 我们七点再对一次进展吧",
+          "@王鑫栋 @蒲其刚 @陈盈桦 @付萌 @南芸 @张顺 我们下午2点对下进展？  预期晚上发一版，明天非必要不发版了",
+          "@陈盈桦 晚上找时间改了一版，个人觉得逻辑上应该清晰一点了。但我没时间去验证这部分改动是否合理。\n1. 明天早上@陈盈桦 都针对这个skill 还有一些需要修改的部分可以做一下修改。\n2. @朱晓敏 ",
+          "@朱晓敏 测试case可以重新看一下，看一下是否覆盖常用的用户场景。补充好测试case，方便后续agent根据测试case验证skill流程。\n@陈盈桦 基于上述的问题，整体更新Skill内容，让Sk"
+        ],
+        "workbench-doc": [
+          "README"
+        ],
+        "gh-pushed": [
+          "-room"
+        ]
+      }
+    },
+    "2026-06-22": {
+      "total": 14,
+      "kinds": {
+        "lark-mentioned": 9,
+        "lark-doc-authored": 5
+      },
+      "samples": {
+        "lark-mentioned": [
+          "<p> @陈盈桦   确认下这次文档的 指令有 询价的能力吗？</p>",
+          "@陈盈桦 哈喽同学，看到你申请了5个火山正式账号。咱们具体是啥用途呢？正式账号通常是产品线生产环境调用火山内部资源使用的，理论上不需要个人申请。\n团队现有账号可以把你添加为团队成员，参考下面截图【团队",
+          "<card title=\"贾凡在「（火山引擎账号）ark-assistant-vend」申请中发起了群聊\">\n**申请人：**@陈盈桦(u_29a7bf1a)（实习） Data-AML-方舟-工程\n\n",
+          "字节云助手 invited 陈盈桦, 贾凡 to the chat.",
+          "https://bytedance.larkoffice.com/wiki/PTqow0Wq9iuPPjk0VOwcNv0knTd  这个是skill的上架流程，@陈盈桦 可以看一下，我们还差什么文档"
+        ],
+        "lark-doc-authored": [
+          "EdgeOne Makers 小红书发布定稿｜手机最终版",
+          "EdgeOne Makers 小红书发布定稿｜手机发布版",
+          "EdgeOne Makers 小红书发布定稿｜ian",
+          "ark-docs-assistant 20260622-1429 交付与验证说明.md",
+          "ark-docs-assistant v7 交付与验证说明.md"
+        ]
+      }
+    },
+    "2026-06-24": {
+      "total": 1293,
+      "kinds": {
+        "lark-mentioned": 8,
+        "workbench-doc": 1282,
+        "lark-doc-authored": 3
+      },
+      "samples": {
+        "lark-mentioned": [
+          "雷宇宁 invited 陈盈桦 to the group. New members can view all chat history.",
+          "@陈盈桦 \n![Image](img_v3_0212v_1a304734-738c-4aa9-b17b-a0d21d6eef5g)\n这个release",
+          "release/0.1.18  @陈盈桦 这个target 太老了",
+          "@陈盈桦 所以这mr也是补充了一个 兜底的  Docs MCP URL 对吧",
+          "@陈盈桦 我有个疑问啊， 你之前的提交 我的理解是arkcli docs 触发了一些接口，这些接口是不是依赖agient有没有mcp把的， 我的理解是不对的吗？"
+        ],
+        "workbench-doc": [
+          "coding_claude_code",
+          "coding_trae",
+          "agent_openclaw",
+          "coding_opencode",
+          "coding_hermes_agent"
+        ],
+        "lark-doc-authored": [
+          "Managed Agents MVP 文档架构设计 - 4-7节与友商全量对标协作稿",
+          "Managed Agents MVP 版本文档架构设计 WIP - 会前评审稿",
+          "方舟技术文档小白质检员 PRD"
+        ]
+      }
+    },
+    "2026-06-25": {
+      "total": 25873,
+      "kinds": {
+        "lark-mentioned": 2,
+        "workbench-doc": 25869,
+        "lark-doc-authored": 2
+      },
+      "samples": {
+        "lark-mentioned": [
+          "卫婧 invited 陈盈桦 to the group. New members can view all chat history.",
+          "卫婧 invited 陈盈桦 to the group. New members can view all chat history."
+        ],
+        "workbench-doc": [
+          "pub_6559_102225_doc",
+          "pub_82379_1262847_listfoundationmodelversions",
+          "pub_85296_2375483_doc",
+          "pub_7139_191834_doc",
+          "pub_87732_2272734_arkclaw"
+        ],
+        "lark-doc-authored": [
+          "智能纪要：Managed Agent文档工作沟通会 2026年6月25日",
+          "Managed Agents MVP 文档架构设计 建议"
+        ]
+      }
+    },
+    "2026-06-26": {
+      "total": 8,
+      "kinds": {
+        "workbench-doc": 6,
+        "lark-doc-authored": 2
+      },
+      "samples": {
+        "workbench-doc": [
+          "v8_max_coverage_report_for_mt",
+          "v9_lark_append_payload",
+          "v9_blindspot_update",
+          "v8_max_coverage_report_for_mt",
+          "v9_lark_append_payload"
+        ],
+        "lark-doc-authored": [
+          "火山方舟 / DataAML 技术文档自动化治理 V8 最广覆盖结项报告",
+          "Managed Agents 7/3 API 文档落地协作稿｜证据审计后版本"
+        ]
+      }
+    },
+    "2026-06-27": {
+      "total": 1,
+      "kinds": {
+        "lark-doc-authored": 1
+      },
+      "samples": {
+        "lark-doc-authored": [
+          "企业自建应用发布申请"
+        ]
+      }
+    },
+    "2026-06-29": {
+      "total": 4,
+      "kinds": {
+        "lark-mentioned": 1,
+        "lark-doc-authored": 3
+      },
+      "samples": {
+        "lark-mentioned": [
+          "<at user_id=\"all\"></at> Managed Agent  功能 0703 发布，当前还剩不到5个工作日，时间紧，任务重，需要大家一起共创文档:SALUTE:[https://byt"
+        ],
+        "lark-doc-authored": [
+          "Managed Agents api",
+          "预约一个 15 分钟的讨论",
+          "预约一个 30 分钟的讨论"
+        ]
+      }
+    },
+    "2026-06-30": {
+      "total": 92,
+      "kinds": {
+        "lark-mentioned": 7,
+        "workbench-doc": 15,
+        "lark-doc-authored": 70
+      },
+      "samples": {
+        "lark-mentioned": [
+          "<p>@李晓航 @陈盈桦 [internal-link] API流水线</p>",
+          "@陈盈桦 最确定的就是这俩。其他就让研发确认吧\n1.  agent.tool 不支持 custom tool\n2. environment.network 不支持 restricted",
+          "@雷宇宁 @陈盈桦 约了四点的会对齐下API流水线",
+          "@陈盈桦 说已经在看 IDL 了， 我还以为是你提供的呢[笑哭]@雷宇宁   好乱啊。。",
+          "@陈盈桦 那这样的话， 许滋那边就先把 49篇空文档创出来，然后你再填内容？"
+        ],
+        "workbench-doc": [
+          "patch_proposal_coding_agent_plan_scoped_v1",
+          "verification_report_coding_agent_plan_official_v1",
+          "coding_agent_plan_scoped_report_v1",
+          "patch_proposal_coding_agent_plan_official_v1",
+          "verification_report_coding_agent_plan_scoped_v1"
+        ],
+        "lark-doc-authored": [
+          "Coding Plan / Agent Plan 官网文档严谨局部全量测评报告 v1.0",
+          "Coding Plan / Agent Plan 官网文档小白测试报告 v1.0",
+          "Coding Plan / Agent Plan 文档评估报告 v0.1",
+          "04_Lark CLI 评论回收流程",
+          "UpdateVault"
+        ]
+      }
+    },
+    "2026-07-01": {
+      "total": 74,
+      "kinds": {
+        "lark-mentioned": 1,
+        "workbench-doc": 34,
+        "lark-doc-authored": 39
+      },
+      "samples": {
+        "lark-mentioned": [
+          "刚和@李永 对了下，API 文档分下优先级，先重点把数据面这10个接口搞定。 @陈盈桦 看看什么时候能给出完整 schema？检视工作@马子航 会帮忙一起组织评审和检视。 cc@雷宇宁 \n![Imag"
+        ],
+        "workbench-doc": [
+          "patch_proposal_coding_agent_plan_official_public_v1",
+          "v11_coding_agent_plan_report_body",
+          "verification_report_coding_agent_plan_official_public_v1",
+          "patch_proposal",
+          "patch_proposal_coding_agent_plan_official_public_v1"
+        ],
+        "lark-doc-authored": [
+          "ListSessionThreads schema 表格样例",
+          "Managed Agents 数据面 10 个接口字段结构 Review",
+          "9. ListSessionThreadEvents 获取线程事件列表",
+          "7. ListSessionThreads 获取会话线程列表",
+          "6. GetSessionResource 获取会话资源"
+        ]
+      }
+    },
+    "2026-07-02": {
+      "total": 28,
+      "kinds": {
+        "lark-mentioned": 11,
+        "workbench-doc": 12,
+        "lark-doc-authored": 5
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@陈盈桦 @雷宇宁 文档权限能开放到AML 不，明天UAT的时候作为参考文档",
+          "<p>@陈盈桦 </p><p>阿里云百炼的api文档也出来了，我们的api 文档搞定后</p><p>你拉下对应的api文档schema，然后和方舟的api & cma的api做个到字段级别的对比吧 c",
+          "<card title=\"🟡 07/02 16:34 周四\">\n两条外部待回，卫婧文档 review 优先\n---\n▸  **Review get-started 文档初稿三份**\n📝 Managed",
+          "<card title=\"🟡 驾驶舱 · 07/02 11:50 周四\">\n**联调群 P0 频发＋卫婧催 10 接口 schema，已给完整目录待 RD 确认**\n📝 5 变化  ·  3 需处理 ",
+          "<card title=\"驾驶舱 · 20260702 03:59 UTC\">\n## 1. 当前主线\n\n联调群突发风险：event-consumer 报 7.8 万错误日志、账号被封、余额告急；文档组"
+        ],
+        "workbench-doc": [
+          "v15_agent_coding_plan_e2e_report",
+          "v12_agent_coding_plan_deep_research_report",
+          "v14_agent_plan_resolution",
+          "v15_agent_coding_plan_e2e_report",
+          "v12_agent_coding_plan_deep_research_report"
+        ],
+        "lark-doc-authored": [
+          "Coding Plan / Agent Plan 工具报告与真实 step-by-step 小白接入测评研报 V15",
+          "1. ListEvents 获取事件列表",
+          "4. AddSessionResource 添加会话资源",
+          "8. GetSessionThread 获取会话线程",
+          "Coding Plan / Agent Plan 官网文档小白真实接入测评研报 V12"
+        ]
+      }
+    },
+    "2026-07-03": {
+      "total": 47,
+      "kinds": {
+        "lark-mentioned": 11,
+        "workbench-doc": 30,
+        "lark-doc-authored": 6
+      },
+      "samples": {
+        "lark-mentioned": [
+          "陈盈桦 removed 朱晓敏 from this chat.",
+          "@马子航 API文档我估计还是高风险吧，高优的10篇，我看到的是只有event 3篇完成rd确认，并生成官网文档了，但是生成的效果不太行，每个event结构没有单独列出来，混在一起，我看yinghua",
+          "<card title=\"🔴 07/03 22:04 周五\">\n16:00交付deadline逼近，main未合入，卫婧/雷宇宁多问待回\n---\n▸  **7/3 16:00 前交付文档给用户**\n📝",
+          "<card title=\"🔴 07/03 21:14 周五\">\n陈盈桦合入main后需给预览链接，自建服务不稳\n---\n✉  **卫婧问预览服务位置+建议合入main**\n📝 方舟文档小分队  ·  ",
+          "<card title=\"🔴 07/03 20:24 周五\">\n16:00交付DDL在即，卫婧刚追进度，API Ref合入main已拖19催\n---\n▸  **7/3 16:00 前交付文档给用户**"
+        ],
+        "workbench-doc": [
+          "step_by_step_meeting_one_pager",
+          "plan_meeting_summary",
+          "plan_minimal_self_check_blocks",
+          "plan_step_by_step_exec_summary",
+          "plan_step_by_step_result_card"
+        ],
+        "lark-doc-authored": [
+          "Coding / Agent Plan 小白接入 Step-by-Step 证据驱动补丁包",
+          "Coding / Agent Plan 小白接入 Step-by-Step 验证结果卡",
+          "Coding / Agent Plan Step-by-Step 文档验证行动包",
+          "10. StreamSessionThreadEvents 流式获取线程事件",
+          "3. StreamEvents 流式获取事件"
+        ]
+      }
+    },
+    "2026-07-04": {
+      "total": 11,
+      "kinds": {
+        "lark-mentioned": 11
+      },
+      "samples": {
+        "lark-mentioned": [
+          "<card title=\"🔴 07/04 22:54 周六\">\n文档合入main+3条外部回复未处理，卫婧连催35次\n---\n▸  **上午合入 API Ref 到 main 供 UAT 总入口**\n",
+          "<card title=\"🔴 07/04 22:24 周六\">\n3 条外部高优严重超期待办，其中合入 main 已被催 34 次\n---\n▸  **上午合入 API Ref 到 main 供 UAT ",
+          "<card title=\"🟡 07/04 21:44 周六\">\n联调群召集7人对齐bugfix；你3条外部高亮欠回复\n---\n▸  **上午合入 API Ref 到 main 供 UAT 总入口**\n",
+          "<card title=\"🔴 07/04 18:54 周六\">\n上午须合入API Ref到main；卫婧多条待回未处理\n---\n▸  **上午合入 API Ref 到 main 供 UAT 总入口**",
+          "<card title=\"🔴 07/04 18:14 周六\">\n上午合入main+3条外部回复未动，文档review待办堆积\n---\n▸  **上午合入 API Ref 到 main 供 UAT 总入"
+        ]
+      }
+    },
+    "2026-07-05": {
+      "total": 4,
+      "kinds": {
+        "lark-mentioned": 4
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@陈盈桦 @雷宇宁 另外，api文档现在啥进度了？哪几篇已定稿可发？ 哪几篇还需要rd review？",
+          "@吴霁轩 明早11点发文档，大家最新的修改都辛苦提前合入main哈 已完成辛苦标记done@雷宇宁 @许滋 @高威 @董晓凯 @陈盈桦",
+          "<card title=\"🟡 07/05 22:34 周日\">\n雷宇宁问MA API默认与关闭@许滋，你有3条外部回复待处理\n---\n▸  **上午合入 API Ref 到 main 供 UAT 总入",
+          "<card title=\"🔴 07/05 22:04 周日\">\n巡检群疑似泄露密钥，需立即处置；3条外发久压未回\n---\n▸  **上午合入 API Ref 到 main 供 UAT 总入口**\n📝 "
+        ]
+      }
+    },
+    "2026-07-06": {
+      "total": 32,
+      "kinds": {
+        "lark-mentioned": 23,
+        "workbench-doc": 8,
+        "lark-doc-authored": 1
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@雷宇宁 @卫婧 @陈盈桦 agent，environment，skill",
+          "[https://www.volcengine.com/docs/82379/2553706?lang=zh](https://www.volcengine.com/docs/82379/255370",
+          "<card title=\"🟡 07/06 21:44 周一\">\n40篇review催13轮·Comment今日·锚点今晚上线\n---\n▸  **40篇API文档待review分模块发布**\n📝 Man",
+          "<card title=\"🔴 07/06 19:44 周一\">\n李晓航疑被落下要立回，卫婧催32次仍待办\n---\n✉  **李晓航连发3条问去向疑被落下**\n📝 方舟文档小分队  ·  待回：李晓航 ",
+          "<card title=\"🟡 07/06 17:44 周一\">\n40篇API待review+MA note渲染bug+锚点上线，卫婧3问未回\n---\n▸  **排查新格式API note渲染问题**\n"
+        ],
+        "workbench-doc": [
+          "coding_agent_plan_engineering_inventory",
+          "coding_agent_plan_newbie_experience_review",
+          "coding_agent_plan_engineering_inventory",
+          "coding_agent_plan_newbie_experience_review",
+          "event_message_rendering_rules"
+        ],
+        "lark-doc-authored": [
+          "5. ListSessionResources 获取会话资源列表"
+        ]
+      }
+    },
+    "2026-07-07": {
+      "total": 44,
+      "kinds": {
+        "lark-mentioned": 14,
+        "workbench-doc": 30
+      },
+      "samples": {
+        "lark-mentioned": [
+          "<card title=\"👤 需求人员分配提醒\">\nML企业服务 - 全流程管理 · 需求 · #7348360506\n[MA 支持 BytePlus 部署](https://meego.feishu",
+          "Meego 项目管理 invited 陈盈桦 to the group. New members can view all chat history.",
+          "@陈盈桦 能快速上线么",
+          "陈盈桦 joined the group via an invitation card shared by 董晓凯. New members can view all chat history.",
+          "@陈盈桦 针对plan 文档检测及自动化的部分，你这边什么情况呢？找时间看一下你那边的效果。"
+        ],
+        "workbench-doc": [
+          "coding_agent_plan_workbench",
+          "internship_context",
+          "ai_doc_collaboration_workflow",
+          "bytedcli_agent_workflow",
+          "message_templates"
+        ]
+      }
+    },
+    "2026-07-08": {
+      "total": 2661,
+      "kinds": {
+        "lark-mentioned": 5,
+        "workbench-doc": 2651,
+        "lark-doc-authored": 5
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@陈盈桦 @朱晓敏 下午2点咱们把plan 文档检测及自动化对一下。",
+          "<card title=\"🔴 07/08 13:34 周三\">\n3项高优external待办:付萌2pm+官网未同步+agent版本失效\n---\n✉  **付萌约下午2点对齐plan文档检测自动化**",
+          "<card title=\"🔴 07/08 12:54 周三\">\n3高优待办含下午2点付萌对齐+2个官网/版本bug\n---\n✉  **付萌约下午2点对齐plan文档检测自动化**\n📝 模型迁移skil",
+          "<card title=\"🟡 07/08 12:14 周三\">\n付萌2点对齐+官网未更新bug待推进\n---\n✉  **付萌约下午2点对齐plan文档检测自动化**\n📝 模型迁移skill  ·  待",
+          "@陈盈桦 官网更新要在火种上点发布，你是不是还没发过文档[捂脸]"
+        ],
+        "workbench-doc": [
+          "README",
+          "README",
+          "agent_other_tools",
+          "agent_other_tools",
+          "coding_ai_tools_index"
+        ],
+        "lark-doc-authored": [
+          "智能纪要：plan 文档检测及自动化 2026年7月8日",
+          "Plan Doc Guardian 监控工具现状说明｜2026-07-08",
+          "Coding / Agent Plan 接入体验",
+          "火山方舟竞品文档与 DX 演进会议简报｜2026-07-01",
+          "火山方舟技术文档自动化治理系统 MVP V6.1 结项报告"
+        ]
+      }
+    },
+    "2026-07-09": {
+      "total": 17,
+      "kinds": {
+        "lark-mentioned": 1,
+        "workbench-doc": 16
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@陈盈桦 \n![Image](img_v3_0213e_b0eacf8d-7d0b-4f49-b990-0be22863a71g)\n不支持 status"
+        ],
+        "workbench-doc": [
+          "README",
+          "feishu_rental_subsidy_policy",
+          "feishu_yejian_tongxing_rules",
+          "feishu_bytebenefits_hub",
+          "feishu_fujiafei_jiaban_daoche"
+        ]
+      }
+    },
+    "2026-07-10": {
+      "total": 13,
+      "kinds": {
+        "lark-mentioned": 7,
+        "workbench-doc": 4,
+        "lark-doc-authored": 2
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@陈盈桦 \n1. agent，已确认过\n2. environment，这里我已回复\n3. skill，在文档中没看到，是已经发布了？",
+          "@陈盈桦 好的👌晚上到家弄",
+          "@陈云鹏 api文档的意见@陈盈桦 这边一直在统一修改，流程是找对应rd doublecheck没问题后上线官网。 我刚和他了解了下，一方面是对意见的理解有偏差，一方面是event api这几篇比较重",
+          "<card title=\"🟡 07/10 19:14 周五\">\n3件owner=me外部待回，2件已催两次\n---\n▸  **雷宇宁将与陈盈桦共审event意见**\n📝 Managed agent 文",
+          "<card title=\"🟡 07/10 18:30 周五\">\n事件文档3高优待推：API示例bug已2次提醒+雷宇宁/陈云鹏外部回复未发\n---\n⚠  **事件API单页多事件不支持多份右侧示例**"
+        ],
+        "workbench-doc": [
+          "chatgpt_share_6a50630e.index",
+          "chatgpt_share_6a50630e.README",
+          "chatgpt_share_6a50630e",
+          "chatgpt_share_6a50630e.topics"
+        ],
+        "lark-doc-authored": [
+          "Managed Agents API 文档 · RD  Review 请求",
+          "MA API P00 最新稿 review（Skill + Events）"
+        ]
+      }
+    },
+    "2026-07-13": {
+      "total": 5,
+      "kinds": {
+        "workbench-doc": 5
+      },
+      "samples": {
+        "workbench-doc": [
+          "collection_report",
+          "sent_messages",
+          "mentions_and_p2p",
+          "oa_traces",
+          "docs_authored"
+        ]
+      }
+    },
+    "2026-07-14": {
+      "total": 7,
+      "kinds": {
+        "workbench-doc": 7
+      },
+      "samples": {
+        "workbench-doc": [
+          "full_two_weeks",
+          "tasks_assigned",
+          "mr_and_docs",
+          "sent_summary",
+          "rd_all_preview"
+        ]
+      }
+    },
+    "2026-07-15": {
+      "total": 4,
+      "kinds": {
+        "lark-mentioned": 4
+      },
+      "samples": {
+        "lark-mentioned": [
+          "<card title=\"🔴 07/15 19:24 周三\">\nc93586等你回:MA英文文档ID绑定是否你统一处理(已催2次)\n---\n✉  **c93586问MA英文文档ID绑定是否我统一处理*",
+          "<card title=\"🟡 07/15 18:44 周三\">\nMA英文ID待回c93586，明日0716上线\n---\n✉  **c93586问MA英文文档ID绑定是否我统一处理**\n📝 方舟文档小分",
+          "<card title=\"🟡 07/15 18:04 周三\">\nc93586问MA英文文档ID绑定是否你统一处理，需回。\n---\n✉  **c93586问MA英文文档ID绑定是否我统一处理**\n📝 方",
+          "@李晓航 @陈盈桦 @李晓航 @李骏然 @朱晓敏 "
+        ]
+      }
+    },
+    "2026-07-20": {
+      "total": 4,
+      "kinds": {
+        "lark-mentioned": 4
+      },
+      "samples": {
+        "lark-mentioned": [
+          "<card title=\"🟡 07/20 21:04 周一\">\n雷宇宁三催盘点MR待回；火种反馈4月来无人应\n---\n▸  **雷宇宁让我盘点名下MR推进或关闭**\n📝 方舟文档小分队  ·  待回：",
+          "<card title=\"🟡 07/20 20:34 周一\">\n雷宇宁催盘点名下MR，已提醒1次待回\n---\n▸  **雷宇宁让我盘点名下MR推进或关闭**\n📝 方舟文档小分队  ·  待回：雷宇宁 ",
+          "<card title=\"🟡 07/20 20:04 周一\">\n雷宇宁催我盘点MR，两条arkcli已3次提醒\n---\n▸  **雷宇宁让我盘点名下MR推进或关闭**\n📝 方舟文档小分队  ·  待回",
+          "@陈盈桦 你这也有些mr，看下是否都是需要合入的，不合入，就手动关闭下"
+        ]
+      }
+    },
+    "2026-07-21": {
+      "total": 5,
+      "kinds": {
+        "lark-mentioned": 5
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@陈盈桦 好的 明天和你针对这些case 看一下有效性",
+          "@陈盈桦 可以整理一份已覆盖的skill的case列表，格式先按鑫栋仓库中case的格式",
+          "付萌 invited 陈盈桦, 范子卿, 王鑫栋 to the chat.",
+          "文档api接进来以后 怎么用@付萌 @陈盈桦 看看怎么和处理下呗？ 要不要在bp的需求一起上了",
+          "付萌 invited 陈盈桦 to the group. New members can view all chat history."
+        ]
+      }
+    },
+    "2026-07-22": {
+      "total": 6,
+      "kinds": {
+        "lark-mentioned": 3,
+        "workbench-doc": 3
+      },
+      "samples": {
+        "lark-mentioned": [
+          "https://console.volcengine.com/ark/region:cn-beijing/docs/82379/2555932?lang=zh\n@雷宇宁 @陈盈桦 创建 session",
+          "<card title=\"🟡 07/22 22:24 周三\">\n305241对齐入参待回复,联调群新meego链接无上下文\n---\n✉  **305241约对齐CreateSession新入参**\n📝",
+          "<card title=\"🟡 07/22 21:44 周三\">\n雷宇宁催MA CreateSession新入参对齐；流水线评审临时对调，上线需筛选\n---\n✉  **305241约对齐CreateSe"
+        ],
+        "workbench-doc": [
+          "intern_work_context_v1_1_delta",
+          "_DELTA_ESSENTIAL",
+          "_DELTA_TIMELINE"
+        ]
+      }
+    },
+    "2026-07-23": {
+      "total": 2849,
+      "kinds": {
+        "lark-mentioned": 4,
+        "workbench-doc": 2845
+      },
+      "samples": {
+        "lark-mentioned": [
+          "<card title=\"🟡 07/23 08:34 周四\">\n305241 CreateSession 待回；日报建议补三块\n---\n✉  **305241约对齐CreateSession新入参**",
+          "@陈盈桦 扫描结果和todo handoff文档，你可以基于这个同步managed agent api sot，然后基于这个生成文档 [internal-link]",
+          "@陈盈桦 @李骏然 在3楼等你们",
+          "@陈盈桦"
+        ],
+        "workbench-doc": [
+          "morning-2026-07-24-cheatsheet",
+          "arkcli_bp_project_state",
+          "p2m_fumeng_0724_draft",
+          "arkcli_bp_3day_meeting_brief_2026_07_23",
+          "arkcli_bp_3day_detailed_log"
+        ]
+      }
+    },
+    "2026-07-24": {
+      "total": 10,
+      "kinds": {
+        "lark-mentioned": 4,
+        "workbench-doc": 6
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@陈盈桦 辛苦从idl拉下字段信息，更新下skill接口的字段",
+          "雷宇宁 invited 陈盈桦 to the group. New members can view all chat history.",
+          "@陈盈桦 @朱晓敏 三楼",
+          "@陈盈桦 咋复现的"
+        ],
+        "workbench-doc": [
+          "chen_action_summary_2026_07_24_1530",
+          "p2m_fumeng_1730_2026_07_24",
+          "arkcli_bp_roadmap",
+          "p2p_ziqing_draft_2026_07_24",
+          "p2m_fumeng_1730_2026_07_24_v3"
+        ]
+      }
+    },
+    "2026-07-25": {
+      "total": 1,
+      "kinds": {
+        "lark-mentioned": 1
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@陈盈桦 bp mcp已经部署了一个mvp版本，你可以基于这个来调试bp 的 arkcli doc 命令，注意 url 后面可能会变（换成域名），你不要写死，仅联调使用\n{\n  \"mcpServers"
+        ]
+      }
+    },
+    "2026-07-28": {
+      "total": 53,
+      "kinds": {
+        "lark-mentioned": 2,
+        "memory-saved": 51
+      },
+      "samples": {
+        "lark-mentioned": [
+          "陈盈桦 joined the group via an invitation card shared by 刘森. New members can view all chat history.",
+          "最里面回盘处@雷宇宁 @朱晓敏 @陈盈桦 @付萌 @李骏然"
+        ],
+        "memory-saved": [
+          "feedback-relentless-wish-fulfillment",
+          "feedback-managed-agent-review-owner",
+          "feedback-tw-api-skill-mandatory",
+          "task-arkcli-custommodel-weng-zip",
+          "feedback-tw-api-yaml-only-no-format-change"
+        ]
+      }
+    },
+    "2026-07-29": {
+      "total": 12,
+      "kinds": {
+        "lark-mentioned": 3,
+        "workbench-doc": 2,
+        "memory-saved": 7
+      },
+      "samples": {
+        "lark-mentioned": [
+          "高威 invited 陈盈桦 to the group. New members can view all chat history.",
+          "@雷宇宁 刚收到这个需求，产品的原始诉求是更新 API 文档（该需求目前仅发布 BP），由于是 API 文档，这块是你还是@陈盈桦 来看下？注：文档中需要提供围绕生图、生视频场景的示例。",
+          "@李晓航 @陈盈桦 @李骏然 自选餐线最深处"
+        ],
+        "workbench-doc": [
+          "03-reply-to-leiyuning-v2",
+          "02-fields-pack-for-gaowei-v2"
+        ],
+        "memory-saved": [
+          "feedback-half-auto-not-full-auto",
+          "feedback-bp-currency-usd-not-cny",
+          "feedback-feishu-first-full-scan",
+          "feedback-subagent-min-use-codex-cli",
+          "feedback-check-what-chen-already-did-first"
+        ]
+      }
+    },
+    "2026-07-30": {
+      "total": 7,
+      "kinds": {
+        "lark-mentioned": 3,
+        "memory-saved": 4
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@李永 API文档中文版是根据IDL更新的，然后我这边翻译得到英文版。@陈盈桦 麻烦看下这个中文版的更新",
+          "@李永 @吴霁轩 Custom Tools 相关文档已更新至预发环境，请评审：\n\n- API 文档 cc @陈盈桦 \n  - Create agent: [[internal-preview]\n  -",
+          "@陈盈桦 我们吃完了"
+        ],
+        "memory-saved": [
+          "feedback-chen-password-leak-repeated",
+          "project-daily-digest",
+          "feedback-bytedcli-mr-merge-elevated-auth",
+          "feedback-computer-use-means-codex-cli"
+        ]
+      }
+    },
+    "2026-07-31": {
+      "total": 35,
+      "kinds": {
+        "lark-mentioned": 1,
+        "workbench-doc": 30,
+        "memory-saved": 4
+      },
+      "samples": {
+        "lark-mentioned": [
+          "@陈盈桦  a：cli对不对这个，这些是自动化类的，这次测试我让agent跑的，之后会落自动化 b.我理解windows不需要跑skill层？主要是命令执行上的兼容，skill加载方式没啥区别@范子卿"
+        ],
+        "workbench-doc": [
+          "DIGITAL_TWIN_RUNBOOK",
+          "HANDOFF_TIANRU",
+          "HANDOFF",
+          "REPORT",
+          "interested_party_evidence"
+        ],
+        "memory-saved": [
+          "user-chen-primary-machine-mac",
+          "feedback-headless-plus-codex-cli-computer-use",
+          "feedback-codex-always-reviewing",
+          "project-yinghua-cortex"
+        ]
+      }
+    },
+    "2026-08-03": {
+      "total": 8,
+      "kinds": {
+        "gh-created": 2,
+        "gh-pushed": 2,
+        "memory-saved": 4
+      },
+      "samples": {
+        "gh-created": [
+          "career-log",
+          "emptyteabot"
+        ],
+        "gh-pushed": [
+          "career-log",
+          "emptyteabot"
+        ],
+        "memory-saved": [
+          "feedback-github-first-reuse-improve",
+          "feedback-deliverable-outline-first-then-produce",
+          "reference-ark-doc-team-consensus",
+          "MEMORY"
+        ]
+      }
+    }
+  }
+}

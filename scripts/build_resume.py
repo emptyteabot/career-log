@@ -26,7 +26,7 @@ def load_state(date: str) -> dict:
       07-16 ~ 07-20 (孕育期): MA sidecar MR!1500 merged 07-15
       07-21 (arkcli BP 交付开始): MR!8 + Kani 权限, 12 skill × 52 case
       07-22 ~ 07-31: MR!61-!71 逐个 merge, cases 52 → 200
-      08-01 ~ 08-03: v10 100% → v11 97.6% → v12 79.2%
+      08-01 ~ 08-03: 第一轮 100% → 第二轮 97.6% → 第三轮 79.2%
     """
     s = json.loads(STATE_FILE.read_text())
     target = dt.date.fromisoformat(date)
@@ -73,9 +73,9 @@ def load_state(date: str) -> dict:
     if target < dt.date(2026, 8, 1):
         s["hard_numbers"]["pass_rate"] = {}
     elif target < dt.date(2026, 8, 2):
-        s["hard_numbers"]["pass_rate"] = {"v10": s["hard_numbers"]["pass_rate"]["v10"]}
+        s["hard_numbers"]["pass_rate"] = {"第一轮": s["hard_numbers"]["pass_rate"]["第一轮"]}
     elif target < dt.date(2026, 8, 3):
-        s["hard_numbers"]["pass_rate"] = {k: s["hard_numbers"]["pass_rate"][k] for k in ("v10","v11")}
+        s["hard_numbers"]["pass_rate"] = {k: s["hard_numbers"]["pass_rate"][k] for k in ("第一轮","第二轮")}
 
     s["snapshot_date"] = date
     s["days_in"] = elapsed
@@ -120,7 +120,7 @@ def render_general(s: dict) -> str:
 - *arkcli BytePlus 版评测框架（主项目，2026-08-10 上线）*：从 0 设计 22 skill × {ek['total_cases']} case 评测体系。3 层判据（L1 preflight / L2 executing / L3 输出断言 regex）。3 版 baseline：{pr_line}
 - *Managed Agent API Reference 首版文档*：40 篇 API 文档 Doc ID / UrlCode 绑定 + CMA schema 爬虫覆盖 49 个接口结构化输出
 - *Agent 工具接入路径验证*：Claude Code + Playwright + bytedcli 组合验证平替内部 CUA 平台，跑通端到端 agent → GUI 自动化
-- *跨仓 MR merged*：aml-qa/arkcli-eval-kit 11 + machinelearning/arkcli 3 + tools/Ark_doc 2
+- *跨仓 MR merged*：internal eval-kit repo 11 + internal CLI main repo 3 + internal doc repo 2
 
 == DeepWisdom (MetaGPT 团队) · Agent PM · 2026-03 - 2026-04
 
@@ -212,7 +212,7 @@ def render_deepseek(s: dict) -> str:
 Claude Code + Playwright + bytedcli 组合验证平替公司内部 CUA 平台。跑通端到端 agent → GUI 自动化，产出配置基线（Base URL / Model ID / settings.json / 401 / model_not_found 常见异常归因）。
 
 === 跨仓 MR 累积 · 共 {hn['mr_merged_total']} 个
-`aml-qa/arkcli-eval-kit` 11 · `machinelearning/arkcli` 3 · `tools/Ark_doc` 2
+`internal eval-kit repo` 11 · `internal CLI main repo` 3 · `internal doc repo` 2
 
 == DeepWisdom (MetaGPT 团队) · Agent PM · 2026-03 - 2026-04
 

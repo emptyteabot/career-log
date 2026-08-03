@@ -102,6 +102,7 @@
       <ul class="hero-facts">
         <li><span class="k">Available</span><span class="v" data-i18n-zh="2027 春 · 上海/北京/杭州/深圳/远程" data-i18n-en="Spring 2027 · SH/BJ/HZ/SZ/remote">2027 春 · 上海/北京/杭州/深圳/远程</span></li>
         <li><span class="k">Now</span><span class="v"><span class="dot"></span> <span data-i18n-zh="arkcli BP 评测 · 08-10 上线" data-i18n-en="arkcli BP eval-kit · ships Aug 10">arkcli BP 评测 · 08-10 上线</span></span></li>
+        <li><span class="k">Content</span><span class="v" data-i18n-zh="小红书 1.3k · 抖音 1.9k · AI 实习博主" data-i18n-en="小红书 1.3k · 抖音 1.9k · AI-intern blogger">小红书 1.3k · 抖音 1.9k · AI 实习博主</span></li>
         <li><span class="k">Reading</span><span class="v">DSPy 2.5 · Anthropic Skills v2</span></li>
       </ul>
     </div>
@@ -139,16 +140,16 @@
           <div class="live-metric">
             <div class="live-label" data-i18n-zh="Pass rate baselines" data-i18n-en="pass-rate baselines">Pass rate baselines</div>
             <div class="live-chips">
-              <span class="chip chip-green">v10 · 100%</span>
-              <span class="chip chip-green">v11 · 97.6%</span>
-              <span class="chip chip-amber">v12 · 79.2%</span>
+              <span class="chip chip-green">第一轮 · 100%</span>
+              <span class="chip chip-green">第二轮 · 97.6%</span>
+              <span class="chip chip-amber">第三轮 · 79.2%</span>
             </div>
           </div>
           <div class="live-metric">
             <div class="live-label" data-i18n-zh="最近出货" data-i18n-en="latest ship">最近出货</div>
-            <div class="live-log"><span class="date">08-03</span> <span class="msg">MR!73 · v12 fix 10 cases</span></div>
-            <div class="live-log"><span class="date">08-01</span> <span class="msg">v10 baseline 100 %</span></div>
-            <div class="live-log"><span class="date">07-31</span> <span class="msg">MR!413 · skill desc harden</span></div>
+            <div class="live-log"><span class="date">08-03</span> <span class="msg">第三轮 fix 10 cases</span></div>
+            <div class="live-log"><span class="date">08-01</span> <span class="msg">第一轮 baseline 100 %</span></div>
+            <div class="live-log"><span class="date">07-31</span> <span class="msg">skill desc 强化 5 处</span></div>
           </div>
         </div>
       </div>
@@ -184,7 +185,7 @@
 
     <div class="narrative-grid">
       <div class="narrative">
-        <p data-i18n-zh="从 6 月 17 日开始，我在为 arkcli 的 BytePlus 版本造评测框架 —— 一组按 skill 分层的 agent runner，代表开发者去跟 LLM 打交道。框架 8 月 10 日上线。截止 8 月 3 日覆盖 <strong>22 个 skill</strong> 共 <strong>215 个 case</strong>，跑过 3 版 baseline：v10 <em>100%</em>，v11 <em>97.6%</em>，v12 在王鑫栋加了 74 个 case 之后跌到 <em>79.2%</em>。我 own 其中 141 个 case，今天在修 10 个 v12 回归。" data-i18n-en="Since June 17 I've been building an evaluation harness for arkcli's BytePlus release — a fleet of skill-scoped agent runners that talk to LLMs on behalf of developers. The harness ships on <strong>Aug 10</strong>. As of Aug 3 it covers <strong>22 skills</strong> across <strong>215 cases</strong>, with three baselines: v10 at <em>100%</em>, v11 at <em>97.6%</em>, and v12 at <em>79.2%</em> after Wang Xindong added 74 more cases. I own 141 of them; today I'm fixing 10 v12 regressions.">从 6 月 17 日开始，我在为 arkcli 的 BytePlus 版本造评测框架 —— 一组按 skill 分层的 agent runner，代表开发者去跟 LLM 打交道。框架 8 月 10 日上线。截止 8 月 3 日覆盖 <strong>22 个 skill</strong> 共 <strong>215 个 case</strong>，跑过 3 版 baseline：v10 <em>100%</em>，v11 <em>97.6%</em>，v12 在王鑫栋加了 74 个 case 之后跌到 <em>79.2%</em>。我 own 其中 141 个 case，今天在修 10 个 v12 回归。</p>
+        <p data-i18n-zh="从 6 月 17 日入职算起，我在字节做了 <strong>两条主线</strong>：前 4 周把 <em>Managed Agents 50 个 API 的 CMA schema</em> 爬完 · 交付 <strong>10 篇数据面接口文档</strong>，逐篇拉 5 位 RD 做字段级 review；同时独立起草了 <em>Plan Doc Guardian</em> 监控工具 MVP V6.1 · 扫官网 Coding/Agent Plan 文档的断链、参数漂移和示例失效。7 月 21 日切到 arkcli BytePlus 版评测框架，8 月 10 日上线 · 覆盖 <strong>22 个 skill</strong> 共 <strong>215 个 case</strong> · 我 own 141 · 3 版 baseline：<em>100 % / 97.6 % / 79.2 %</em>。" data-i18n-en="Since June 17 I've been running <strong>two parallel tracks</strong> at ByteDance: for the first four weeks I crawled the CMA schemas of <em>50 Managed Agent APIs</em>, delivered <strong>10 data-plane API docs</strong> with per-endpoint field review by 5 RDs; in parallel I solo-designed and shipped <em>Plan Doc Guardian</em>, a monitoring MVP that scans the public Coding/Agent Plan docs for broken links, param drift, and dead code samples. On July 21 I switched to the arkcli BytePlus evaluation harness, shipping Aug 10 · covering <strong>22 skills</strong> across <strong>215 cases</strong> · I own 141 · three baselines: <em>100 % / 97.6 % / 79.2 %</em>.">从 6 月 17 日入职算起，我在字节做了 <strong>两条主线</strong>：前 4 周把 <em>Managed Agents 50 个 API 的 CMA schema</em> 爬完 · 交付 <strong>10 篇数据面接口文档</strong>，逐篇拉 5 位 RD 做字段级 review；同时独立起草了 <em>Plan Doc Guardian</em> 监控工具 MVP V6.1 · 扫官网 Coding/Agent Plan 文档的断链、参数漂移和示例失效。7 月 21 日切到 arkcli BytePlus 版评测框架，8 月 10 日上线 · 覆盖 <strong>22 个 skill</strong> 共 <strong>215 个 case</strong> · 我 own 141 · 3 版 baseline：<em>100 % / 97.6 % / 79.2 %</em>。</p>
       </div>
       <figure class="fig">
         <div class="fig-frame chart">
@@ -204,9 +205,9 @@
             <text x="30" y="55"  fill="#7d8590" font-size="10" text-anchor="end">90</text>
             <text x="30" y="95"  fill="#7d8590" font-size="10" text-anchor="end">80</text>
             <text x="30" y="135" fill="#7d8590" font-size="10" text-anchor="end">70</text>
-            <text x="90"  y="185" fill="#7d8590" font-size="10" text-anchor="middle">v10</text>
-            <text x="200" y="185" fill="#7d8590" font-size="10" text-anchor="middle">v11</text>
-            <text x="310" y="185" fill="#7d8590" font-size="10" text-anchor="middle">v12</text>
+            <text x="90"  y="185" fill="#7d8590" font-size="10" text-anchor="middle">第一轮</text>
+            <text x="200" y="185" fill="#7d8590" font-size="10" text-anchor="middle">第二轮</text>
+            <text x="310" y="185" fill="#7d8590" font-size="10" text-anchor="middle">第三轮</text>
             <path d="M90,20 L200,29.6 L310,103.2 L310,170 L90,170 Z" fill="url(#passGrad)"/>
             <path d="M90,20 L200,29.6 L310,103.2" stroke="#3fb950" stroke-width="2" fill="none"/>
             <circle cx="90"  cy="20"    r="4" fill="#3fb950"/>
@@ -217,13 +218,13 @@
             <text x="310" y="95" fill="#f0f6fc" font-size="11" text-anchor="middle" font-weight="600">79.2%</text>
           </svg>
         </div>
-        <figcaption data-i18n-zh="图 · 3 版 pass rate 曲线。v12 加 74 case 之后回落，正在修" data-i18n-en="Pass rate across 3 baselines. v12 dipped after 74 new cases; fixing.">图 · 3 版 pass rate 曲线。v12 加 74 case 之后回落，正在修</figcaption>
+        <figcaption data-i18n-zh="图 · 3 版 pass rate 曲线。第三轮 加 74 case 之后回落，正在修" data-i18n-en="Pass rate across 3 baselines. 第三轮 dipped after 74 new cases; fixing.">图 · 3 版 pass rate 曲线。第三轮 加 74 case 之后回落，正在修</figcaption>
       </figure>
     </div>
 
     <div class="narrative-grid alt narrative-single">
       <div class="narrative">
-        <p data-i18n-zh="有意思的是 v11 → v12 的回归不是"case 变严"而是 CLI 参数变了 —— 一些 flag 改名，模型 ID 漂移，assertion regex 没跟上。这类事 harness engineer 每天都在做：<em>识别哪个抖动是真信号，哪个是测试脏</em>。" data-i18n-en="Interestingly the v11 → v12 regressions are not stricter cases but CLI parameter changes — flags renamed, model IDs drifting, assertion regex out of date. This is the daily work of a harness engineer: <em>separating real signal from test-side drift</em>.">有意思的是 v11 → v12 的回归不是"case 变严"而是 CLI 参数变了 —— 一些 flag 改名，模型 ID 漂移，assertion regex 没跟上。这类事 harness engineer 每天都在做：<em>识别哪个抖动是真信号，哪个是测试脏</em>。</p>
+        <p data-i18n-zh="有意思的是 第二轮 → 第三轮 的回归不是"case 变严"而是 CLI 参数变了 —— 一些 flag 改名，模型 ID 漂移，assertion regex 没跟上。这类事 harness engineer 每天都在做：<em>识别哪个抖动是真信号，哪个是测试脏</em>。" data-i18n-en="Interestingly the 第二轮 → 第三轮 regressions are not stricter cases but CLI parameter changes — flags renamed, model IDs drifting, assertion regex out of date. This is the daily work of a harness engineer: <em>separating real signal from test-side drift</em>.">有意思的是 第二轮 → 第三轮 的回归不是"case 变严"而是 CLI 参数变了 —— 一些 flag 改名，模型 ID 漂移，assertion regex 没跟上。这类事 harness engineer 每天都在做：<em>识别哪个抖动是真信号，哪个是测试脏</em>。</p>
       </div>
     </div>
   </div>
@@ -237,29 +238,39 @@
 
     <ol class="ship-log">
       <li>
-        <div class="ship-meta"><span class="ship-date">2026-08-03</span> <span class="ship-tag">arkcli-eval-kit</span></div>
-        <h3><a href="https://code.byted.org/aml-qa/arkcli-eval-kit" target="_blank" rel="noopener">MR!73 · v12 fix batch, 10 cases</a></h3>
-        <p data-i18n-zh="从 v11 → v12 的 10 个回归复现。定位到 6 个 model-id 漂移，3 个 tenant 参数缺失，1 个 assertion 里塞了不可见换行符。现在在跑 v12.1。" data-i18n-en="Reproduced 10 regressions from v11 → v12. Root-caused 6 to model-id drift, 3 to a missing tenant flag, 1 to a stray CRLF in an assertion. Re-running v12.1.">从 v11 → v12 的 10 个回归复现。定位到 6 个 model-id 漂移，3 个 tenant 参数缺失，1 个 assertion 里塞了不可见换行符。现在在跑 v12.1。</p>
+        <div class="ship-meta"><span class="ship-date">2026-08-03</span> <span class="ship-tag">arkcli BP eval-kit</span></div>
+        <h3>第三轮 fix batch · 10 cases</h3>
+        <p data-i18n-zh="从第二轮 → 第三轮的 10 个回归复现。定位到 6 个模型别名漂移、3 个租户参数缺失、1 个 assertion 里塞了不可见换行符。正在跑第三轮修复。" data-i18n-en="Reproduced 10 regressions between rounds 2 and 3. Root-caused 6 to model-alias drift, 3 to missing tenant flag, 1 to a stray CRLF in an assertion. Re-running.">从第二轮 → 第三轮的 10 个回归复现。定位到 6 个模型别名漂移、3 个租户参数缺失、1 个 assertion 里塞了不可见换行符。正在跑第三轮修复。</p>
       </li>
       <li>
-        <div class="ship-meta"><span class="ship-date">2026-08-01</span> <span class="ship-tag">baseline</span></div>
-        <h3 data-i18n-zh="v10 baseline @ 100%（83/83 real-pass），v11 @ 97.6%" data-i18n-en="v10 baseline @ 100% (83/83), v11 @ 97.6%">v10 baseline @ 100%（83/83 real-pass），v11 @ 97.6%</h3>
-        <p data-i18n-zh="第一次跑出全绿。v11 引入 BP-1.0.11 alignment，回归 2 个 case —— 期望输出的 shape 变了。" data-i18n-en="First fully-green run. v11 introduces BP-1.0.11 alignment; regressed 2 cases whose expected shape changed.">第一次跑出全绿。v11 引入 BP-1.0.11 alignment，回归 2 个 case —— 期望输出的 shape 变了。</p>
+        <div class="ship-meta"><span class="ship-date">2026-07-31</span> <span class="ship-tag">runbook · workbench</span></div>
+        <h3 data-i18n-zh="digital twin runbook + 30 篇 workbench 归档" data-i18n-en="digital twin runbook + 30 workbench docs archived">digital twin runbook + 30 篇 workbench 归档</h3>
+        <p data-i18n-zh="把 arkcli BP 项目从入职以来的所有决策点、依赖、卡点整理成 30 篇 workbench doc，下一次 agent restart 能秒懂上下文。" data-i18n-en="Consolidated every decision, dependency and blocker of the arkcli BP project into 30 workbench docs so the next agent restart can pick up in seconds.">把 arkcli BP 项目从入职以来的所有决策点、依赖、卡点整理成 30 篇 workbench doc，下一次 agent restart 能秒懂上下文。</p>
       </li>
       <li>
-        <div class="ship-meta"><span class="ship-date">2026-07-31</span> <span class="ship-tag">machinelearning/arkcli</span></div>
-        <h3><a href="#" class="mr" onclick="return false">MR!413 · skill description hardening</a></h3>
-        <p data-i18n-zh="收紧 5 个 skill description（resources / helper / doctor / gen / usage），加了 anti-trigger 块。发现 routing 在模糊 prompt 上选错了 skill。" data-i18n-en="Tightened five skill descriptions after noticing routing was picking the wrong skill on ambiguous prompts. Added an anti-trigger block per description.">收紧 5 个 skill description（resources / helper / doctor / gen / usage），加了 anti-trigger 块。发现 routing 在模糊 prompt 上选错了 skill。</p>
+        <div class="ship-meta"><span class="ship-date">2026-07-25</span> <span class="ship-tag">BP MCP · 海外产品</span></div>
+        <h3 data-i18n-zh="BP MCP mvp 联调 · arkcli-bp 海外产品承接" data-i18n-en="BP MCP mvp integration · overseas arkcli-bp handoff">BP MCP mvp 联调 · arkcli-bp 海外产品承接</h3>
+        <p data-i18n-zh="接雷宇宁交办的 arkcli-bp 海外产品线，跑通 MCP mvp 的 docs apis list / spec 调用，写完 URL 参数化避免写死。" data-i18n-en="Took over the arkcli-bp overseas product line handoff. Verified MCP mvp docs API list/spec end-to-end and parameterized the URL to avoid hard-coding.">接雷宇宁交办的 arkcli-bp 海外产品线，跑通 MCP mvp 的 docs apis list / spec 调用，写完 URL 参数化避免写死。</p>
       </li>
       <li>
-        <div class="ship-meta"><span class="ship-date">2026-07-28</span> <span class="ship-tag">arkcli-eval-kit</span></div>
-        <h3><a href="#" class="mr" onclick="return false">MR!66 · runner regex double-fix</a></h3>
-        <p data-i18n-zh="Regex 编译带多行标志但测试用单行拼接 → false negative。修了编译 flag，也修了掩盖它的 fixture。" data-i18n-en="Regex compiled with multi-line flag but tested against a single-line join → false negatives. Fixed the compile flag and the fixture masking it.">Regex 编译带多行标志但测试用单行拼接 → false negative。修了编译 flag，也修了掩盖它的 fixture。</p>
+        <div class="ship-meta"><span class="ship-date">2026-07-15</span> <span class="ship-tag">MA-API sidecar · 30 篇</span></div>
+        <h3 data-i18n-zh="30 篇 Managed Agents API 代码 sidecar 合入 main" data-i18n-en="30 Managed Agents API code sidecars merged to main">30 篇 Managed Agents API 代码 sidecar 合入 main</h3>
+        <p data-i18n-zh="给 30 篇 MA API 文档补齐代码 sidecar 文件，让文档流水线能自动 hydrate Python/Go/curl 代码 tab。同天接高威给我 40 篇 Doc ID / UrlCode 绑定任务。" data-i18n-en="Backfilled code sidecar files for 30 Managed Agents API pages so the doc-pipeline could hydrate Python/Go/curl code tabs. Same day: Gaowei handed me 40 doc-ID / URL-code bindings.">给 30 篇 MA API 文档补齐代码 sidecar 文件，让文档流水线能自动 hydrate Python/Go/curl 代码 tab。同天接高威给我 40 篇 Doc ID / UrlCode 绑定任务。</p>
       </li>
       <li>
-        <div class="ship-meta"><span class="ship-date">2026-07-15</span> <span class="ship-tag">tools/Ark_doc</span></div>
-        <h3><a href="https://code.byted.org/tools/Ark_doc/merge_requests/1500" target="_blank" rel="noopener">MR!1500 · 30 篇 MA-API 代码 sidecar</a></h3>
-        <p data-i18n-zh="给 30 篇 Managed Agents API 文档补齐代码 sidecar 文件，让文档流水线能自动 hydrate Python/Go/curl 代码 tab。" data-i18n-en="Backfilled code sidecar files for 30 Managed Agents API pages so the doc-pipeline could hydrate Python/Go/curl tabs.">给 30 篇 Managed Agents API 文档补齐代码 sidecar 文件，让文档流水线能自动 hydrate Python/Go/curl 代码 tab。</p>
+        <div class="ship-meta"><span class="ship-date">2026-07-08</span> <span class="ship-tag">Plan Doc Guardian</span></div>
+        <h3 data-i18n-zh="Plan Doc Guardian 监控工具 MVP V6.1 结项" data-i18n-en="Plan Doc Guardian monitoring tool · MVP V6.1 shipped">Plan Doc Guardian 监控工具 MVP V6.1 结项</h3>
+        <p data-i18n-zh="独立起草 · 独立交付。扫火山方舟官网 Coding/Agent Plan 文档 · 检测断链/示例失效/参数漂移 · 输出证据驱动补丁包。是我入职首月自选的第二条主线。" data-i18n-en="Solo design, solo delivery. Scans the Volcano Ark Coding/Agent Plan public docs · detects broken links, dead samples, param drift · emits evidence-backed patch bundles. My freshman-month self-driven second track.">独立起草 · 独立交付。扫火山方舟官网 Coding/Agent Plan 文档 · 检测断链/示例失效/参数漂移 · 输出证据驱动补丁包。是我入职首月自选的第二条主线。</p>
+      </li>
+      <li>
+        <div class="ship-meta"><span class="ship-date">2026-07-03</span> <span class="ship-tag">MA API Ref · 3 篇合入</span></div>
+        <h3 data-i18n-zh="SendEvent / StreamEvents / StreamThreadEvents 三篇 API 文档合入 main" data-i18n-en="Three event-stream API docs (SendEvent / StreamEvents / StreamThreadEvents) merged to main">SendEvent / StreamEvents / StreamThreadEvents 三篇 API 文档合入 main</h3>
+        <p data-i18n-zh="拉陈云鹏做字段级 review · 修完注释重新生成内网预览 · 加急合并。数据面 10 个接口的第一批 3 篇上线。" data-i18n-en="Pulled Chen Yunpeng for field-level review, revised annotations, regenerated internal previews, and force-merged the first batch of 3 out of 10 data-plane APIs.">拉陈云鹏做字段级 review · 修完注释重新生成内网预览 · 加急合并。数据面 10 个接口的第一批 3 篇上线。</p>
+      </li>
+      <li>
+        <div class="ship-meta"><span class="ship-date">2026-06-30</span> <span class="ship-tag">CMA schema · 50 API</span></div>
+        <h3 data-i18n-zh="Managed Agents 50 个 API 的 CMA schema 爬完 · 10 接口字段结构 Review 全套" data-i18n-en="Full CMA schema of 50 Managed Agent APIs · plus 10-API data-plane field-structure review pack">Managed Agents 50 个 API 的 CMA schema 爬完 · 10 接口字段结构 Review 全套</h3>
+        <p data-i18n-zh="从 CMA / BAM / IDL 三源交叉爬 50 个 API 的 schema，对齐方舟侧字段，产出 10 接口的 Self Review 版 + RD Review 请求版 · 拉 5 位 RD 分模块 review。我入职第 14 天。" data-i18n-en="Crawled 50 API schemas from CMA / BAM / IDL, aligned fields with Ark side, produced Self Review + RD Review packs, pulled 5 RDs to review by module. Day 14 of my internship.">从 CMA / BAM / IDL 三源交叉爬 50 个 API 的 schema，对齐方舟侧字段，产出 10 接口的 Self Review 版 + RD Review 请求版 · 拉 5 位 RD 分模块 review。我入职第 14 天。</p>
       </li>
     </ol>
   </div>
@@ -322,16 +333,28 @@
 
     <div class="work-grid-small">
       <div class="work-card-sm">
-        <h3>Multi-Agent Reliability Eval <span class="pill">DeepWisdom</span></h3>
-        <p data-i18n-zh="4 架构 × 300 样本 · Wilson CI + paired bootstrap + McNemar · 结论：5-agent majority 只在错误相关性 ρ < 0.42 时 Pareto 优。" data-i18n-en="4 architectures × 300 samples · Wilson CI + paired bootstrap + McNemar · Finding: 5-agent majority is Pareto-optimal only when calibration error correlation ρ < 0.42.">4 架构 × 300 样本 · Wilson CI + paired bootstrap + McNemar · 结论：5-agent majority 只在错误相关性 ρ &lt; 0.42 时 Pareto 优。</p>
+        <h3>daily-digest <span class="pill">launchd</span></h3>
+        <p data-i18n-zh="每天 12:00 自动扫 Reddit + Hacker News + X · Claude 4.6 摘中文简报 → 推飞书。launchd 常驻，本地跑。" data-i18n-en="Every day at noon: scans Reddit + Hacker News + X, summarizes into a Chinese digest via Claude 4.6, pushes to Feishu. launchd daemon.">每天 12:00 自动扫 Reddit + Hacker News + X · Claude 4.6 摘中文简报 → 推飞书。launchd 常驻，本地跑。</p>
       </div>
       <div class="work-card-sm">
-        <h3>yinghua-cortex</h3>
-        <p data-i18n-zh="个人签名 Agent · Mac launchd 15min tick · 扫飞书 + 摘要 + 决策提示 · 离线跑。" data-i18n-en="Personal signing agent · Mac launchd 15min tick · scan Lark + summarize + decisions · offline.">个人签名 Agent · Mac launchd 15min tick · 扫飞书 + 摘要 + 决策提示 · 离线跑。</p>
+        <h3>yinghua-cortex <span class="pill">launchd</span></h3>
+        <p data-i18n-zh="个人签名 Agent · Mac launchd 15 min tick · 扫飞书 + 摘要 + 决策提示 · 离线跑。" data-i18n-en="Personal signing agent · Mac launchd 15-min tick · scans Lark, summarizes threads, surfaces decisions. Runs offline.">个人签名 Agent · Mac launchd 15 min tick · 扫飞书 + 摘要 + 决策提示 · 离线跑。</p>
+      </div>
+      <div class="work-card-sm">
+        <h3>mr-watcher <span class="pill">launchd</span></h3>
+        <p data-i18n-zh="MR 守护 · 每 5 分钟轮询未 merged / stale MR 推飞书提醒 · 不再漏 review 请求。" data-i18n-en="MR guard · polls unmerged / stale MRs every 5 min, pings me on Feishu · so I never miss a review request again.">MR 守护 · 每 5 分钟轮询未 merged / stale MR 推飞书提醒 · 不再漏 review 请求。</p>
+      </div>
+      <div class="work-card-sm">
+        <h3>Plan Doc Guardian <span class="pill">字节实习</span></h3>
+        <p data-i18n-zh="独立起草 · 独立交付的火山方舟 Coding/Agent Plan 官网文档监控工具 · MVP V6.1 结项 · 断链/示例失效/参数漂移检测。" data-i18n-en="Solo design and delivery: monitoring tool for the Volcano Ark Coding/Agent Plan public docs. MVP V6.1 shipped.">独立起草 · 独立交付的火山方舟 Coding/Agent Plan 官网文档监控工具 · MVP V6.1 结项 · 断链/示例失效/参数漂移检测。</p>
+      </div>
+      <div class="work-card-sm">
+        <h3>Multi-Agent Reliability Eval <span class="pill">DeepWisdom</span></h3>
+        <p data-i18n-zh="4 架构 × 300 样本 · Wilson CI + paired bootstrap + McNemar · 结论：5-agent majority 只在错误相关性 ρ &lt; 0.42 时 Pareto 优。" data-i18n-en="4 architectures × 300 samples · Wilson CI + paired bootstrap + McNemar · Finding: 5-agent majority is Pareto-optimal only when calibration-error correlation ρ &lt; 0.42.">4 架构 × 300 样本 · Wilson CI + paired bootstrap + McNemar · 结论：5-agent majority 只在错误相关性 ρ &lt; 0.42 时 Pareto 优。</p>
       </div>
       <div class="work-card-sm">
         <h3 data-i18n-zh="铁矿石量化预测" data-i18n-en="Iron-ore forecasting">铁矿石量化预测</h3>
-        <p data-i18n-zh="卓创资讯 · LightGBM + Optuna · 自研 未来函数自动检测 Agent + Code Compliance Agent。" data-i18n-en="卓创资讯 · LightGBM + Optuna · self-built "unknown-future function" detector agent + Code Compliance agent.">卓创资讯 · LightGBM + Optuna · 自研未来函数自动检测 Agent + Code Compliance Agent。</p>
+        <p data-i18n-zh="卓创资讯 · LightGBM + Optuna · 自研未来函数自动检测 Agent + Code Compliance Agent。" data-i18n-en="卓创资讯 · LightGBM + Optuna · self-built unknown-future function detector agent + Code Compliance agent.">卓创资讯 · LightGBM + Optuna · 自研未来函数自动检测 Agent + Code Compliance Agent。</p>
       </div>
     </div>
   </div>
@@ -347,7 +370,7 @@
 
       <p data-i18n-zh="厦大经济统计学专业训练让我不轻信点估计 —— 下一个直觉是 <em>先算一下置信区间</em>。也教会我一件事：如果数字复现不出来，那个数字就不属于你。这两条现在直接指导我做 harness 工程。" data-i18n-en="Economic Statistics at Xiamen U trained me to distrust point estimates — my next instinct is to <em>reach for a confidence interval</em>. It also taught me: if you can't reproduce the number, you don't own the number. Both directly inform how I do harness engineering today.">厦大经济统计学专业训练让我不轻信点估计 —— 下一个直觉是 <em>先算一下置信区间</em>。也教会我一件事：如果数字复现不出来，那个数字就不属于你。这两条现在直接指导我做 harness 工程。</p>
 
-      <p data-i18n-zh="我对 Agent 工程里那些不性感的部分特别感兴趣 —— tool call 会怎么失败、context 会怎么漂、harness 在模型回来一堆乱码 JSON 时怎么恢复、v11 到底比 v10 好多少（不骗自己）。这些都是部署之后才知道的事。" data-i18n-en="I'm interested in the mundane parts of agent engineering — how tool calls fail, how contexts drift, how a harness recovers when the model returns garbled JSON, whether v11 is <em>actually</em> better than v10. The parts you find out only when you deploy.">我对 Agent 工程里那些不性感的部分特别感兴趣 —— tool call 会怎么失败、context 会怎么漂、harness 在模型回来一堆乱码 JSON 时怎么恢复、v11 到底比 v10 好多少（不骗自己）。这些都是部署之后才知道的事。</p>
+      <p data-i18n-zh="我对 Agent 工程里那些不性感的部分特别感兴趣 —— tool call 会怎么失败、context 会怎么漂、harness 在模型回来一堆乱码 JSON 时怎么恢复、第二轮 到底比 第一轮 好多少（不骗自己）。这些都是部署之后才知道的事。" data-i18n-en="I'm interested in the mundane parts of agent engineering — how tool calls fail, how contexts drift, how a harness recovers when the model returns garbled JSON, whether 第二轮 is <em>actually</em> better than 第一轮. The parts you find out only when you deploy.">我对 Agent 工程里那些不性感的部分特别感兴趣 —— tool call 会怎么失败、context 会怎么漂、harness 在模型回来一堆乱码 JSON 时怎么恢复、第二轮 到底比 第一轮 好多少（不骗自己）。这些都是部署之后才知道的事。</p>
 
       <p data-i18n-zh="业余在小红书 <a href='https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9'>ian · 420404210</a> 和抖音上做 <em>AI 实习博主</em> · 小红书 <strong>1300</strong> 粉、抖音 <strong>1900</strong> 粉，写 Claude Code / Codex / Cursor 实战、Multi-Agent 边界、Vibe Coding 案例，也讲我在字节做 harness 每天踩什么坑。" data-i18n-en="Off-hours I'm building an audience around <em>AI-internship diary</em> content — on 小红书 <a href='https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9'>ian · 420404210</a> (~1,300 followers) and 抖音 (~1,900 followers). I write about Claude Code / Codex / Cursor field notes, multi-agent boundaries, Vibe Coding, and the messy parts of doing harness eng inside ByteDance.">业余在小红书 <a href="https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9">ian · 420404210</a> 和抖音上做 <em>AI 实习博主</em> · 小红书 <strong>1300</strong> 粉、抖音 <strong>1900</strong> 粉，写 Claude Code / Codex / Cursor 实战、Multi-Agent 边界、Vibe Coding 案例，也讲我在字节做 harness 每天踩什么坑。</p>
     </div>

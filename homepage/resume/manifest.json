@@ -3,17 +3,17 @@
     {
       "date": "2026-06-17",
       "day": 1,
-      "badge": "入职第 1 天"
+      "badge": "入职第 1 天 · 拉入方舟文档小分队"
     },
     {
       "date": "2026-06-18",
       "day": 2,
-      "badge": null
+      "badge": "接 Plan 文档监控与验证方案"
     },
     {
       "date": "2026-06-19",
       "day": 3,
-      "badge": null
+      "badge": "Ark CLI docs 调研 + MVP, 子卿 approval"
     },
     {
       "date": "2026-06-20",
@@ -43,12 +43,12 @@
     {
       "date": "2026-06-25",
       "day": 9,
-      "badge": null
+      "badge": "Managed Agents MVP 架构设计稿 + 竞品对标"
     },
     {
       "date": "2026-06-26",
       "day": 10,
-      "badge": null
+      "badge": "自动化治理系统 V8 结项"
     },
     {
       "date": "2026-06-27",
@@ -68,22 +68,22 @@
     {
       "date": "2026-06-30",
       "day": 14,
-      "badge": "CMA schema 爬完 49 接口"
+      "badge": "CMA schema 爬完 50 API · 数据面 10 接口 Review 全套"
     },
     {
       "date": "2026-07-01",
       "day": 15,
-      "badge": null
+      "badge": "10 接口字段结构 Self Review"
     },
     {
       "date": "2026-07-02",
       "day": 16,
-      "badge": null
+      "badge": "小白测评研报 V15"
     },
     {
       "date": "2026-07-03",
       "day": 17,
-      "badge": "MA API 文档立项 · 雷宇宁 P2P"
+      "badge": "SendEvent 三篇 API MR 合入 · RD review 拉通"
     },
     {
       "date": "2026-07-04",
@@ -103,12 +103,12 @@
     {
       "date": "2026-07-07",
       "day": 21,
-      "badge": null
+      "badge": "拉入 MA 支持 BytePlus 项目组"
     },
     {
       "date": "2026-07-08",
       "day": 22,
-      "badge": null
+      "badge": "Plan Doc Guardian MVP V6.1 结项"
     },
     {
       "date": "2026-07-09",
@@ -118,7 +118,7 @@
     {
       "date": "2026-07-10",
       "day": 24,
-      "badge": null
+      "badge": "Managed Agents API RD Review 发起"
     },
     {
       "date": "2026-07-11",
@@ -143,7 +143,7 @@
     {
       "date": "2026-07-15",
       "day": 29,
-      "badge": "MR!1500 · 30 MA API sidecar merged"
+      "badge": "文档仓 MR!1500 · 30 篇 MA-API sidecar 合入"
     },
     {
       "date": "2026-07-16",
@@ -173,7 +173,7 @@
     {
       "date": "2026-07-21",
       "day": 35,
-      "badge": "arkcli BP 项目立项 · MR!8 首交付 · 12 skill × 52 case"
+      "badge": "arkcli BP 立项 · MR!8 首交付 12×52 case"
     },
     {
       "date": "2026-07-22",
@@ -183,7 +183,7 @@
     {
       "date": "2026-07-23",
       "day": 37,
-      "badge": null
+      "badge": "3 天详细 log + roadmap + tenant e2e evidence"
     },
     {
       "date": "2026-07-24",
@@ -208,7 +208,7 @@
     {
       "date": "2026-07-28",
       "day": 42,
-      "badge": "arkcli-bp 海外产品承接 · 复项回执"
+      "badge": "arkcli-bp 承接 · SSO 5 天 debug 沉淀"
     },
     {
       "date": "2026-07-29",
@@ -218,27 +218,27 @@
     {
       "date": "2026-07-30",
       "day": 44,
-      "badge": "付萌 v2 评测方案对齐"
+      "badge": "v2 评测方案对齐 · daily-digest 上线"
     },
     {
       "date": "2026-07-31",
       "day": 45,
-      "badge": "215 case 覆盖 · 王鑫栋 P0 case 挑战"
+      "badge": "215 case 覆盖 · digital twin runbook"
     },
     {
       "date": "2026-08-01",
       "day": 46,
-      "badge": "v10 pass rate 100% baseline"
+      "badge": "第一轮 pass rate 100%"
     },
     {
       "date": "2026-08-02",
       "day": 47,
-      "badge": "v11 pass rate 97.6% · 1.0.11 alignment"
+      "badge": "第二轮 97.6%"
     },
     {
       "date": "2026-08-03",
       "day": 48,
-      "badge": "v12 79.2% · 215 case · 16 MR merged"
+      "badge": "第三轮 79.2% · 215 case · 16 MR · career-log 上线"
     }
   ]
 }

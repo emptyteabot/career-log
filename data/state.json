@@ -11,9 +11,9 @@
   "hard_numbers": {
     "mr_merged_total": 16,
     "mr_by_repo": {
-      "aml-qa/arkcli-eval-kit": [8, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73],
-      "machinelearning/arkcli": [379, 400, 413],
-      "tools/Ark_doc": [1500, 1752, 1782]
+      "internal eval-kit repo": [8, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73],
+      "internal CLI main repo": [379, 400, 413],
+      "internal doc repo": [1500, 1752, 1782]
     },
     "eval_kit": {
       "total_cases": 215,
@@ -22,20 +22,20 @@
       "skills_covered": 22
     },
     "pass_rate": {
-      "v10": {"cli_version": "1.0.9",  "cases": 140, "pct": 100.0, "detail": "83/83 real pass"},
-      "v11": {"cli_version": "1.0.11", "cases": 140, "pct": 97.6},
-      "v12": {"cli_version": "1.0.11", "cases": 215, "pct": 79.2, "note": "chen own 部分仍 ~90%"}
+      "第一轮": {"cli_version": "an earlier CLI",  "cases": 140, "pct": 100.0, "detail": "83/83 real pass"},
+      "第二轮": {"cli_version": "the latest CLI", "cases": 140, "pct": 97.6},
+      "第三轮": {"cli_version": "the latest CLI", "cases": 215, "pct": 79.2, "note": "chen own 部分仍 ~90%"}
     },
     "highlights": [
-      "arkcli MR!413 · 5 处 SKILL description 强化 (resources/helper/doctor/gen/usage)",
-      "kit MR!66 · Runner regex bug 双修",
-      "kit MR!68 · BP 1.0.11 alignment (billing/understand/custommodel)",
-      "kit MR!72 · billing 截断 gate case",
-      "kit MR!73 · v12 fail 10 条修 (08-03 当天)",
-      "arkcli MR!400 · 淑华 custommodel zip merge",
-      "Ark_doc MR!1500 · 30 MA API .code.md sidecar",
-      "Ark_doc MR!1752 + MR!1782 · MA hide + input_schema",
-      "arkcli MR!379 · MA SkillHub cleanup 3 处",
+      "CLI 主仓 MR!413 · 5 处 SKILL description 强化 (resources/helper/doctor/gen/usage)",
+      "评测仓 MR!66 · Runner regex bug 双修",
+      "评测仓 MR!68 · BP the latest CLI alignment (billing/understand/custommodel)",
+      "评测仓 MR!72 · billing 截断 gate case",
+      "评测仓 MR!73 · 第三轮 fail 10 条修 (08-03 当天)",
+      "CLI 主仓 MR!400 · 淑华 custommodel zip merge",
+      "文档仓 MR!1500 · 30 MA API .code.md sidecar",
+      "文档仓 MR!1752 + MR!1782 · MA hide + input_schema",
+      "CLI 主仓 MR!379 · MA SkillHub cleanup 3 处",
       "SSO 5 天 debug + memory 沉淀 + 2 个 OAuth client_id 分析",
       "kit reference doc (R1nJdkoA) + 飞书扫 doc (QhICdgVKJ)"
     ]
