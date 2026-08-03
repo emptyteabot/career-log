@@ -13,9 +13,10 @@
 <meta property="og:image" content="https://emptyteabot.github.io/career-log/assets/shots/career-log.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;700&display=swap"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;700&display=swap"/>
 <link rel="stylesheet" href="assets/style.css"/>
 
 <script type="application/ld+json">
@@ -108,7 +109,11 @@
     <aside class="hero-right">
       <!-- Résumé peek image -->
       <a class="resume-peek" href="resume/latest-general.pdf" download>
-        <img src="assets/shots/resume-general.png" alt="Latest résumé preview" loading="lazy"/>
+        <picture>
+          <source type="image/webp" srcset="assets/shots/resume-general.webp"/>
+          <source type="image/jpeg" srcset="assets/shots/resume-general.jpg"/>
+          <img src="assets/shots/resume-general.jpg" alt="Latest résumé preview" width="900" height="1273" loading="lazy" decoding="async"/>
+        </picture>
         <div class="peek-overlay">
           <span class="peek-tag" data-i18n-zh="最新简历 · 点击下载" data-i18n-en="latest résumé · click to download">最新简历 · 点击下载</span>
         </div>
@@ -268,7 +273,11 @@
     <div class="work-grid-large">
       <a class="work-card-lg" href="https://leadpulseagi.com" target="_blank" rel="noopener">
         <div class="work-shot">
-          <img src="assets/shots/leadpulse.png" alt="LeadPulse screenshot" loading="lazy"/>
+          <picture>
+          <source type="image/webp" srcset="assets/shots/leadpulse.webp"/>
+          <source type="image/jpeg" srcset="assets/shots/leadpulse.jpg"/>
+          <img src="assets/shots/leadpulse.jpg" alt="LeadPulse screenshot" width="1200" height="771" loading="lazy" decoding="async"/>
+        </picture>
           <div class="shot-frame"></div>
         </div>
         <div class="work-body">
@@ -280,7 +289,11 @@
 
       <a class="work-card-lg" href="https://agenthelpjob.com" target="_blank" rel="noopener">
         <div class="work-shot">
-          <img src="assets/shots/agenthelpjob.png" alt="AgentHelpJob screenshot" loading="lazy"/>
+          <picture>
+          <source type="image/webp" srcset="assets/shots/agenthelpjob.webp"/>
+          <source type="image/jpeg" srcset="assets/shots/agenthelpjob.jpg"/>
+          <img src="assets/shots/agenthelpjob.jpg" alt="AgentHelpJob screenshot" width="1200" height="771" loading="lazy" decoding="async"/>
+        </picture>
           <div class="shot-frame"></div>
         </div>
         <div class="work-body">
@@ -292,7 +305,11 @@
 
       <a class="work-card-lg" href="https://github.com/emptyteabot/career-log" target="_blank" rel="noopener">
         <div class="work-shot">
-          <img src="assets/shots/career-log.png" alt="career-log screenshot" loading="lazy"/>
+          <picture>
+          <source type="image/webp" srcset="assets/shots/career-log.webp"/>
+          <source type="image/jpeg" srcset="assets/shots/career-log.jpg"/>
+          <img src="assets/shots/career-log.jpg" alt="career-log screenshot" width="1200" height="771" loading="lazy" decoding="async"/>
+        </picture>
           <div class="shot-frame"></div>
         </div>
         <div class="work-body">
