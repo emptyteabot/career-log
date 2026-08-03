@@ -1,209 +1,407 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="zh-CN" data-lang="zh">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>陈盈桦 Ian Chen · AI 工程 · Agent 产品方向</title>
-<meta name="description" content="厦门大学经济统计学 · 大二在读 · 字节跳动 火山方舟 AI 工程实习中。Agent Harness / Tool Use / Context Engineering 方向。每日自动更新的开放简历。"/>
-<meta property="og:title" content="陈盈桦 Ian Chen · career-log"/>
-<meta property="og:description" content="Agent 工程 · 每日快照 · 简历时间线 · 联系入口"/>
+<title>Ian Chen · 陈盈桦 · agent harness engineer</title>
+<meta name="description" content="厦门大学大二在读 · 字节跳动 火山方舟 实习 · Agent Harness 工程方向 · arkcli BP 评测框架 22 skills × 215 cases · 2026-08-10 上线。可招聘 spring 2027。"/>
+<meta name="keywords" content="陈盈桦, Ian Chen, agent harness, LLM eval, arkcli, ByteDance, DeepSeek, Anthropic, OpenAI intern, Xiamen University, 六盘水, MetaGPT, DeepWisdom"/>
+<meta property="og:title" content="Ian Chen · agent harness engineer"/>
+<meta property="og:description" content="22 skills × 215 cases eval-kit ships Aug 10 · daily-updated résumé · hire@"/>
+<meta property="og:type" content="profile"/>
+<meta property="og:url" content="https://emptyteabot.github.io/career-log/"/>
+<meta property="og:image" content="https://emptyteabot.github.io/career-log/assets/og.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css"/>
+
+<!-- Structured data · Person schema for LLM/GEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "陈盈桦",
+  "alternateName": ["Ian Chen", "emptyteabot"],
+  "jobTitle": "Agent harness engineer (intern)",
+  "worksFor": {"@type":"Organization","name":"ByteDance Data-AML · Volcano Ark"},
+  "affiliation": {"@type":"CollegeOrUniversity","name":"Xiamen University","url":"https://www.xmu.edu.cn/"},
+  "url": "https://emptyteabot.github.io/career-log/",
+  "sameAs": [
+    "https://github.com/emptyteabot",
+    "https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9",
+    "https://leadpulsecgi.com",
+    "https://agenthelpjob.com"
+  ],
+  "email": "13398580812@163.com",
+  "knowsAbout": [
+    "Agent harness engineering",
+    "LLM tool calling and function calling",
+    "Evaluation infrastructure for LLM applications",
+    "Multi-agent systems and reliability evaluation",
+    "arkcli CLI · BytePlus · Managed Agents",
+    "Wilson confidence intervals · paired bootstrap · McNemar",
+    "Claude Code · Codex CLI · Cursor · MCP"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"陈盈桦 Ian Chen 是谁？","acceptedAnswer":{"@type":"Answer","text":"陈盈桦 (Ian Chen) 是厦门大学经济统计学 2024 级在读本科生，现于字节跳动 Data-AML 火山方舟团队实习，方向为 Agent Harness 工程 —— 为大模型驱动的 CLI 构建评测基础设施。"}},
+    {"@type":"Question","name":"他现在在做什么？","acceptedAnswer":{"@type":"Answer","text":"arkcli BytePlus 版评测框架，2026-08-10 上线。覆盖 22 个 CLI skill 共 215 个 case，采用 L1 preflight / L2 execution / L3 output-regex 三层判据。3 版 baseline: v10 100%, v11 97.6%, v12 79.2%。他 own 141 个 case。"}},
+    {"@type":"Question","name":"他能做什么？","acceptedAnswer":{"@type":"Answer","text":"截止 2026-08-03 已合入 16 个 MR，跨三个 ByteDance 仓库。会用 Python/TypeScript/Go 全栈交付，用 Wilson CI / McNemar test 判方案是否真的比上一版好。"}},
+    {"@type":"Question","name":"是否可以招聘？","acceptedAnswer":{"@type":"Answer","text":"可以。方向：AI 工程、Agent Harness、应用研究。可入职时间：2027 春季起。城市：上海 / 北京 / 杭州 / 深圳 / 远程。联系邮箱 13398580812@163.com。"}}
+  ]
+}
+</script>
 </head>
 <body>
-<canvas id="bg"></canvas>
 
-<header class="topbar">
-  <div class="brand">
-    <span class="dot"></span>
-    <span class="brand-name">陈盈桦 · career-log</span>
+<!-- Live particle grid background -->
+<canvas id="grid-bg"></canvas>
+
+<!-- Top bar -->
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-avatar">◐</span>
+      <span class="brand-name">Ian Chen · 陈盈桦</span>
+    </a>
+    <div class="topnav-right">
+      <a href="#now" data-i18n-zh="现在" data-i18n-en="Now">现在</a>
+      <a href="#ship" data-i18n-zh="出货" data-i18n-en="Ship log">出货</a>
+      <a href="#work" data-i18n-zh="作品" data-i18n-en="Work">作品</a>
+      <a href="#archive" data-i18n-zh="档案" data-i18n-en="Archive">档案</a>
+      <a href="#contact" data-i18n-zh="联系" data-i18n-en="Contact">联系</a>
+      <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">EN</button>
+    </div>
   </div>
-  <nav>
-    <a href="#now">现状</a>
-    <a href="#numbers">数字</a>
-    <a href="#resume">简历</a>
-    <a href="#projects">项目</a>
-    <a href="#story">故事</a>
-    <a href="#contact">联系</a>
-    <button id="theme-toggle" title="切换主题">◐</button>
-  </nav>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <p class="eyebrow" data-i18n-zh="大二在读 · 字节跳动 火山方舟 · 每日更新的简历" data-i18n-en="Sophomore · ByteDance ARK · daily-updated résumé">大二在读 · 字节跳动 火山方舟 · 每日更新的简历</p>
+      <h1 class="hero-name">
+        <span class="cn" data-i18n-zh="陈盈桦" data-i18n-en="Ian Chen">陈盈桦</span>
+        <span class="en">Ian Chen</span>
+      </h1>
+      <p class="hero-tag" data-i18n-zh="agent harness engineer · 每一天都在造评测 · 每一天都在写文档" data-i18n-en="agent harness engineer · ships eval infra · writes his own docs">agent harness engineer · 每一天都在造评测 · 每一天都在写文档</p>
+      <p class="hero-sub" data-i18n-zh="用 Claude Code + Codex CLI + Cursor 每天做真交付。经济统计学出身，会用 Wilson CI 判方案是不是真的比上一版好。" data-i18n-en="Every day I ship. Every day I log. Trained in econ stats — reaching for a confidence interval before I reach for a conclusion.">用 Claude Code + Codex CLI + Cursor 每天做真交付。经济统计学出身，会用 Wilson CI 判方案是不是真的比上一版好。</p>
+
+      <div class="hero-cta">
+        <a class="btn primary" href="resume/latest-general.pdf" download>
+          <span data-i18n-zh="下载简历" data-i18n-en="Résumé">下载简历</span>
+          <span class="btn-hint">.pdf</span>
+        </a>
+        <a class="btn" href="resume/latest-deepseek.pdf" download>
+          <span data-i18n-zh="DeepSeek 定向版" data-i18n-en="DeepSeek variant">DeepSeek 定向版</span>
+        </a>
+        <a class="btn ghost" href="mailto:13398580812@163.com?subject=%5Bhire%5D%20Ian%20Chen">
+          <span data-i18n-zh="发邮件招我" data-i18n-en="Hire me">发邮件招我</span> ↗
+        </a>
+      </div>
+
+      <ul class="hero-facts">
+        <li><span class="k">Available</span><span class="v" data-i18n-zh="2027 春季 · 上海/北京/杭州/深圳/远程" data-i18n-en="Spring 2027 · SH/BJ/HZ/SZ/remote">2027 春季 · 上海/北京/杭州/深圳/远程</span></li>
+        <li><span class="k">Now</span><span class="v"><span class="dot"></span> <span data-i18n-zh="arkcli BP 评测 · 08-10 上线" data-i18n-en="arkcli BP eval-kit · ships Aug 10">arkcli BP 评测 · 08-10 上线</span></span></li>
+        <li><span class="k">Reading</span><span class="v">DSPy 2.5 · Anthropic Skills v2</span></li>
+      </ul>
+    </div>
+
+    <aside class="hero-right">
+      <div class="live-card">
+        <div class="live-head">
+          <span class="live-dot"></span>
+          <span data-i18n-zh="当前状态 · 实时" data-i18n-en="live status">当前状态 · 实时</span>
+          <span class="live-time" id="live-time"></span>
+        </div>
+        <div class="live-body">
+          <div class="live-metric">
+            <div class="live-label" data-i18n-zh="入职天数" data-i18n-en="days into internship">入职天数</div>
+            <div class="live-value"><span id="days-in-hero">47</span> <span class="unit">/ 183</span></div>
+            <div class="bar"><span class="bar-fill" id="days-fill"></span></div>
+          </div>
+          <div class="live-metric">
+            <div class="live-label" data-i18n-zh="arkcli BP 评测覆盖" data-i18n-en="arkcli BP eval coverage">arkcli BP 评测覆盖</div>
+            <div class="live-value"><span id="cases-own">141</span> <span class="unit">/ 215 cases</span></div>
+            <div class="bar"><span class="bar-fill" style="width:65.6%"></span></div>
+          </div>
+          <div class="live-metric">
+            <div class="live-label" data-i18n-zh="Pass rate baselines" data-i18n-en="pass-rate baselines">Pass rate baselines</div>
+            <div class="live-chips">
+              <span class="chip chip-green">v10 · 100%</span>
+              <span class="chip chip-green">v11 · 97.6%</span>
+              <span class="chip chip-amber">v12 · 79.2%</span>
+            </div>
+          </div>
+          <div class="live-metric">
+            <div class="live-label" data-i18n-zh="最近出货" data-i18n-en="latest ship">最近出货</div>
+            <div class="live-log"><span class="date">08-03</span> <span class="msg">MR!73 · v12 fix 10 cases</span></div>
+            <div class="live-log"><span class="date">08-01</span> <span class="msg">v10 baseline 100 %</span></div>
+            <div class="live-log"><span class="date">07-31</span> <span class="msg">MR!413 · skill desc harden</span></div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="hero-marquee">
+    <div class="marquee-track">
+      <span>Claude Code</span><span>·</span>
+      <span>Codex CLI</span><span>·</span>
+      <span>Cursor</span><span>·</span>
+      <span>OpenCode</span><span>·</span>
+      <span>MCP</span><span>·</span>
+      <span>FastAPI</span><span>·</span>
+      <span>Next.js</span><span>·</span>
+      <span>Go</span><span>·</span>
+      <span>Playwright</span><span>·</span>
+      <span>Typst</span><span>·</span>
+      <span>Wilson CI</span><span>·</span>
+      <span>McNemar test</span><span>·</span>
+      <span>launchd/cron</span><span>·</span>
+      <span>Claude Code</span><span>·</span>
+      <span>Codex CLI</span><span>·</span>
+      <span>Cursor</span>
+    </div>
+  </div>
 </header>
 
-<main>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">大二在读 · 字节跳动 火山方舟 实习中 · 每日自动更新</p>
-      <h1><span class="cn">陈盈桦</span> <span class="en">Ian Chen</span></h1>
-      <p class="tagline">AI 工程 &amp; Agent 产品方向 · 厦门大学 经济统计学</p>
-      <p class="sub">用 Claude Code / Codex CLI / Cursor 每天做真交付。在字节方舟做 Agent Harness 相关工程。</p>
-      <div class="cta-row">
-        <a class="btn primary" href="resume/latest-general.pdf" download>下载最新简历 (PDF)</a>
-        <a class="btn ghost" href="resume/latest-deepseek.pdf" download>DeepSeek 定向版</a>
-        <a class="btn ghost" href="resume/latest-mindmap.pdf" download>项目思维导图</a>
+<!-- NOW -->
+<section id="now" class="section">
+  <div class="section-inner">
+    <p class="section-tag" data-i18n-zh="01 · 现在" data-i18n-en="01 · Now">01 · 现在</p>
+    <h2 data-i18n-zh="正在做的 · 一个能落地的东西" data-i18n-en="One thing I'm shipping right now">正在做的 · 一个能落地的东西</h2>
+
+    <div class="narrative-grid">
+      <div class="narrative">
+        <p data-i18n-zh="从 6 月 17 日开始，我在为 arkcli 的 BytePlus 版本造评测框架 —— 一组按 skill 分层的 agent runner，代表开发者去跟 LLM 打交道。框架 8 月 10 日上线。截止 8 月 3 日覆盖 <strong>22 个 skill</strong> 共 <strong>215 个 case</strong>，跑过 3 版 baseline：v10 <em>100 %</em>，v11 <em>97.6 %</em>，v12 在 王鑫栋 加了 74 个 case 之后跌到 <em>79.2 %</em>。我 own 其中 141 个 case，今天在 <a href='#' class='mr'>MR!73</a> 修 10 个 v12 回归。" data-i18n-en="Since June 17 I've been building an evaluation harness for <code>arkcli</code>'s BytePlus release — a fleet of skill-scoped agent runners that talk to LLMs on behalf of developers. The harness ships on <strong>Aug 10</strong>. As of Aug 3 it covers <strong>22 skills</strong> across <strong>215 cases</strong>, with three baselines: v10 at <em>100 %</em>, v11 at <em>97.6 %</em>, and v12 at <em>79.2 %</em> after Wang Xindong added 74 more cases. I own 141 of them; today I'm fixing 10 v12 regressions in <a href='#' class='mr'>MR!73</a>.">从 6 月 17 日开始，我在为 arkcli 的 BytePlus 版本造评测框架 —— 一组按 skill 分层的 agent runner，代表开发者去跟 LLM 打交道。框架 8 月 10 日上线。截止 8 月 3 日覆盖 <strong>22 个 skill</strong> 共 <strong>215 个 case</strong>，跑过 3 版 baseline：v10 <em>100 %</em>，v11 <em>97.6 %</em>，v12 在 王鑫栋 加了 74 个 case 之后跌到 <em>79.2 %</em>。我 own 其中 141 个 case，今天在 <a href='#' class='mr'>MR!73</a> 修 10 个 v12 回归。</p>
       </div>
-      <p class="hero-meta"><span>最近快照：<time id="last-snap">2026-08-03</time></span> · <span id="days-in">入职第 47 天</span></p>
+      <figure class="fig">
+        <div class="fig-frame">
+          <div class="fig-window">
+            <div class="fig-window-bar"><i></i><i></i><i></i><span>arkcli-eval-kit · verdict pipeline</span></div>
+            <pre id="verdict-diagram"></pre>
+          </div>
+        </div>
+        <figcaption data-i18n-zh="图 1 · L1 preflight → L2 exec → L3 assertion regex · 3 版 baseline" data-i18n-en="Fig. 1 · L1 preflight → L2 exec → L3 assertion regex · 3 baselines">图 1 · L1 preflight → L2 exec → L3 assertion regex · 3 版 baseline</figcaption>
+      </figure>
     </div>
-    <div class="hero-scroll">▾</div>
-  </section>
 
-  <!-- NUMBERS -->
-  <section id="numbers" class="section">
-    <div class="section-head">
-      <span class="section-tag">01 · 硬产出数字</span>
-      <h2>Numbers speak</h2>
+    <div class="narrative-grid alt">
+      <figure class="fig">
+        <div class="fig-frame chart">
+          <svg viewBox="0 0 400 200" width="100%" height="200" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="passGrad" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#3fb950" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#3fb950" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <!-- axes -->
+            <line x1="40" y1="20" x2="40" y2="170" stroke="#30363d"/>
+            <line x1="40" y1="170" x2="380" y2="170" stroke="#30363d"/>
+            <!-- gridlines -->
+            <line x1="40" y1="50"  x2="380" y2="50"  stroke="#30363d" stroke-dasharray="2 3"/>
+            <line x1="40" y1="90"  x2="380" y2="90"  stroke="#30363d" stroke-dasharray="2 3"/>
+            <line x1="40" y1="130" x2="380" y2="130" stroke="#30363d" stroke-dasharray="2 3"/>
+            <!-- labels -->
+            <text x="30" y="25"  fill="#7d8590" font-size="10" text-anchor="end">100</text>
+            <text x="30" y="55"  fill="#7d8590" font-size="10" text-anchor="end">90</text>
+            <text x="30" y="95"  fill="#7d8590" font-size="10" text-anchor="end">80</text>
+            <text x="30" y="135" fill="#7d8590" font-size="10" text-anchor="end">70</text>
+            <text x="90"  y="185" fill="#7d8590" font-size="10" text-anchor="middle">v10</text>
+            <text x="200" y="185" fill="#7d8590" font-size="10" text-anchor="middle">v11</text>
+            <text x="310" y="185" fill="#7d8590" font-size="10" text-anchor="middle">v12</text>
+            <!-- filled area -->
+            <path d="M90,20 L200,29.6 L310,103.2 L310,170 L90,170 Z" fill="url(#passGrad)"/>
+            <!-- line -->
+            <path d="M90,20 L200,29.6 L310,103.2" stroke="#3fb950" stroke-width="2" fill="none"/>
+            <!-- dots -->
+            <circle cx="90"  cy="20"    r="4" fill="#3fb950"/>
+            <circle cx="200" cy="29.6"  r="4" fill="#3fb950"/>
+            <circle cx="310" cy="103.2" r="4" fill="#d29922"/>
+            <!-- annotations -->
+            <text x="90"  y="12" fill="#f0f6fc" font-size="11" text-anchor="middle" font-weight="600">100%</text>
+            <text x="200" y="22" fill="#f0f6fc" font-size="11" text-anchor="middle" font-weight="600">97.6%</text>
+            <text x="310" y="95" fill="#f0f6fc" font-size="11" text-anchor="middle" font-weight="600">79.2%</text>
+          </svg>
+        </div>
+        <figcaption data-i18n-zh="图 2 · 3 版 pass rate 曲线。v12 加 74 case 之后回落到 79.2%，正在修" data-i18n-en="Fig. 2 · Pass rate across 3 baselines. v12 dipped after 74 new cases; fixing.">图 2 · 3 版 pass rate 曲线。v12 加 74 case 之后回落到 79.2%，正在修</figcaption>
+      </figure>
+      <div class="narrative">
+        <p data-i18n-zh="有意思的是发现 v11 → v12 之间的回归不是"case 变严"而是"CLI 变了"—— <code>--project</code> 换成 <code>--tenant</code>、模型名从 <code>doubao-seed-2-0</code> 漂到 <code>doubao-seed-2-1-260628</code>，而 case 里的 regex 没跟上。这类事 harness engineer 每天都在做：<em>识别哪个抖动是真信号，哪个是测试脏</em>。" data-i18n-en="Interestingly the v11 → v12 regressions are not "cases got stricter" but "the CLI moved" — <code>--project</code> renamed to <code>--tenant</code>, model IDs drifting from <code>doubao-seed-2-0</code> to <code>doubao-seed-2-1-260628</code>, assertion regex out of date. This is the daily work of a harness engineer: <em>separating real signal from test-side drift</em>.">有意思的是发现 v11 → v12 之间的回归不是"case 变严"而是"CLI 变了"—— <code>--project</code> 换成 <code>--tenant</code>、模型名从 <code>doubao-seed-2-0</code> 漂到 <code>doubao-seed-2-1-260628</code>，而 case 里的 regex 没跟上。这类事 harness engineer 每天都在做：<em>识别哪个抖动是真信号，哪个是测试脏</em>。</p>
+      </div>
     </div>
-    <div class="stats-grid" id="stats-grid">
-      <div class="stat"><div class="stat-value" data-target="16">0</div><div class="stat-label">MR merged · 跨 3 仓</div></div>
-      <div class="stat"><div class="stat-value" data-target="215">0</div><div class="stat-label">arkcli BP eval-kit 总 case</div></div>
-      <div class="stat"><div class="stat-value" data-target="141">0</div><div class="stat-label">chen own case 数</div></div>
-      <div class="stat"><div class="stat-value" data-target="22">0</div><div class="stat-label">评测覆盖 skill 数</div></div>
-      <div class="stat"><div class="stat-value" data-target="979">0</div><div class="stat-label">小红书垂直开发者粉丝</div></div>
-      <div class="stat"><div class="stat-value" data-target="4">0</div><div class="stat-label">完成实习段 · 全部 AI 方向</div></div>
-    </div>
-    <p class="rate-line">
-      <span class="chip">v10 · 100%</span>
-      <span class="chip">v11 · 97.6%</span>
-      <span class="chip">v12 · 79.2%</span>
-      <span class="rate-desc">arkcli BP eval-kit 3 版 pass rate</span>
-    </p>
-  </section>
+  </div>
+</section>
 
-  <!-- NOW -->
-  <section id="now" class="section">
-    <div class="section-head">
-      <span class="section-tag">02 · 现在正在做</span>
-      <h2>Now</h2>
-    </div>
-    <div class="now-grid">
-      <article class="card">
-        <h3>arkcli BytePlus 评测框架</h3>
-        <p>08-10 上线冲刺。3 版 pass rate 已产出，v12 79.2% 需回升到 ≥95%。付萌 PM · 雷宇宁 MT。</p>
-        <div class="tags"><span>Python</span><span>Go</span><span>skill-e2e</span><span>opencode</span></div>
-      </article>
-      <article class="card">
-        <h3>Managed Agent API 文档</h3>
-        <p>40 篇 API Doc ID/UrlCode 绑定完成 · MR!1500 · MR!1752 · MR!1782 已合入 tools/Ark_doc。</p>
-        <div class="tags"><span>Ark_doc</span><span>MA</span><span>Doc</span></div>
-      </article>
-      <article class="card">
-        <h3>Agent Harness 工具链</h3>
-        <p>Claude Code + Codex CLI + Playwright 组合平替内部 CUA · yinghua-cortex 自动化系统 · daily-digest。</p>
-        <div class="tags"><span>Claude Code</span><span>Codex CLI</span><span>Playwright</span></div>
-      </article>
-    </div>
-  </section>
+<!-- SHIP LOG -->
+<section id="ship" class="section">
+  <div class="section-inner">
+    <p class="section-tag" data-i18n-zh="02 · 出货" data-i18n-en="02 · Ship log">02 · 出货</p>
+    <h2 data-i18n-zh="最近做完的东西" data-i18n-en="Last five things I shipped">最近做完的东西</h2>
+    <p class="section-sub" data-i18n-zh="按倒序 · 全量出货记录在 career-log 仓 · 每天凌晨自动追加。" data-i18n-en="Reverse chronological. Full log auto-appended nightly on the career-log repo.">按倒序 · 全量出货记录在 <a href="https://github.com/emptyteabot/career-log">career-log 仓</a> · 每天凌晨自动追加。</p>
 
-  <!-- RESUME -->
-  <section id="resume" class="section">
-    <div class="section-head">
-      <span class="section-tag">03 · 简历时间线</span>
-      <h2>Resume timeline</h2>
-      <p class="section-sub">每天自动快照，PDF 归档。任选一天下载看当时状态。</p>
-    </div>
-    <div class="resume-list" id="resume-list">
-      <!-- populated by JS from resumes-manifest.json -->
-    </div>
-  </section>
+    <ol class="ship-log" id="ship-log">
+      <li>
+        <div class="ship-meta"><span class="ship-date">2026-08-03</span> <span class="ship-tag">arkcli-eval-kit</span></div>
+        <h3><a href="https://code.byted.org/aml-qa/arkcli-eval-kit" target="_blank" rel="noopener">MR!73 · v12 fix batch, 10 cases</a></h3>
+        <p data-i18n-zh="从 v11 → v12 的 10 个回归复现。定位到 6 个 model-id 漂移（doubao-seed-2-1 别名），3 个 --tenant flag 缺失，1 个 assertion regex 里塞了 CRLF。现在在跑 v12.1。" data-i18n-en="Reproduced 10 regressions from v11 → v12. Root-caused 6 to model-id drift on <code>doubao-seed-2-1</code>, 3 to a <code>--tenant</code> flag missing on auth prelude, 1 to CRLF in an assertion regex. Re-running v12.1.">从 v11 → v12 的 10 个回归复现。定位到 6 个 model-id 漂移（doubao-seed-2-1 别名），3 个 --tenant flag 缺失，1 个 assertion regex 里塞了 CRLF。现在在跑 v12.1。</p>
+      </li>
+      <li>
+        <div class="ship-meta"><span class="ship-date">2026-08-01</span> <span class="ship-tag">baseline</span></div>
+        <h3 data-i18n-zh="v10 baseline @ 100 %（83/83 real-pass），v11 @ 97.6 %" data-i18n-en="v10 baseline @ 100 % (83/83), v11 @ 97.6 %">v10 baseline @ 100 %（83/83 real-pass），v11 @ 97.6 %</h3>
+        <p data-i18n-zh="第一次跑出全绿。v11 引入 BP-1.0.11 alignment（billing / understand / custommodel 三域），回归 2 个 case —— 期望输出的 shape 变了，因为 CLI 从 --project 换到 --tenant。" data-i18n-en="First fully-green run. v11 introduces BP-1.0.11 alignment across billing/understand/custommodel; regressed 2 cases whose expected shape changed when CLI switched --project→--tenant.">第一次跑出全绿。v11 引入 BP-1.0.11 alignment（billing / understand / custommodel 三域），回归 2 个 case —— 期望输出的 shape 变了，因为 CLI 从 --project 换到 --tenant。</p>
+      </li>
+      <li>
+        <div class="ship-meta"><span class="ship-date">2026-07-31</span> <span class="ship-tag">machinelearning/arkcli</span></div>
+        <h3><a href="#" class="mr" onclick="return false">MR!413 · skill description hardening</a></h3>
+        <p data-i18n-zh="收紧 5 个 skill description（resources / helper / doctor / gen / usage），加了 anti-trigger 块（"不要在用户说 X 时路由到这里，路由到 Y"），是因为发现 routing 在模糊 prompt 上选错了 skill。" data-i18n-en="Tightened five skill descriptions (resources / helper / doctor / gen / usage) after noticing model-routing was picking the wrong skill on ambiguous prompts. New descriptions include an anti-trigger block ("do not route here if user asks X, route to Y").">收紧 5 个 skill description（resources / helper / doctor / gen / usage），加了 anti-trigger 块（"不要在用户说 X 时路由到这里，路由到 Y"），是因为发现 routing 在模糊 prompt 上选错了 skill。</p>
+      </li>
+      <li>
+        <div class="ship-meta"><span class="ship-date">2026-07-28</span> <span class="ship-tag">arkcli-eval-kit</span></div>
+        <h3><a href="#" class="mr" onclick="return false">MR!66 · runner regex double-fix</a></h3>
+        <p data-i18n-zh="Assertion regex 编译时带 re.MULTILINE，但测的时候用单行拼接 → false negative。修了编译 flag，也修了掩盖它的 fixture。两个 bug 一个 PR。" data-i18n-en="Regex compiled with re.MULTILINE but tested against a single-line join → false negatives. Fixed the compile flag AND the fixture masking it. Two bugs, one PR.">Assertion regex 编译时带 re.MULTILINE，但测的时候用单行拼接 → false negative。修了编译 flag，也修了掩盖它的 fixture。两个 bug 一个 PR。</p>
+      </li>
+      <li>
+        <div class="ship-meta"><span class="ship-date">2026-07-15</span> <span class="ship-tag">tools/Ark_doc</span></div>
+        <h3><a href="https://code.byted.org/tools/Ark_doc/merge_requests/1500" target="_blank" rel="noopener">MR!1500 · 30 MA-API .code.md sidecar</a></h3>
+        <p data-i18n-zh="给 30 篇 Managed Agents API 文档补齐 .code.md sidecar 文件，让 doc-pipeline 能 hydrate Python/Go/curl 代码 tab。标 "Translate: no"，不进翻译队列。" data-i18n-en="Backfilled .code.md sidecar files for 30 Managed Agents API pages so the doc-pipeline could hydrate Python/Go/curl tabs. Marked 'Translate: no' to skip the translation queue.">给 30 篇 Managed Agents API 文档补齐 .code.md sidecar 文件，让 doc-pipeline 能 hydrate Python/Go/curl 代码 tab。标 "Translate: no"，不进翻译队列。</p>
+      </li>
+    </ol>
+  </div>
+</section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="section-head">
-      <span class="section-tag">04 · 精选项目</span>
-      <h2>Selected projects</h2>
-    </div>
-    <div class="project-grid">
-      <a class="project" href="https://leadpulsecgi.com" target="_blank" rel="noopener">
+<!-- WORK -->
+<section id="work" class="section">
+  <div class="section-inner">
+    <p class="section-tag" data-i18n-zh="03 · 精选作品" data-i18n-en="03 · Selected work">03 · 精选作品</p>
+    <h2 data-i18n-zh="被真正上线过的东西" data-i18n-en="Things that actually shipped">被真正上线过的东西</h2>
+
+    <div class="work-grid">
+      <a class="work-card" href="https://leadpulsecgi.com" target="_blank" rel="noopener">
+        <div class="work-thumb work-thumb-1"><span>LP</span></div>
         <h3>LeadPulse</h3>
-        <p>线索提取 Agent · FastAPI + Next.js + LLM API · Prompt 路由 + 规则标签 + 人工确认。</p>
-        <span class="link">leadpulsecgi.com →</span>
+        <p data-i18n-zh="线索提取 Agent · FastAPI + Next.js + LLM API · Prompt 路由 + 规则标签 + 人工确认" data-i18n-en="Lead-extraction agent · FastAPI + Next.js + LLM API · prompt routing + rule tags + human-in-the-loop confirm">线索提取 Agent · FastAPI + Next.js + LLM API · Prompt 路由 + 规则标签 + 人工确认</p>
+        <span class="work-link">leadpulsecgi.com ↗</span>
       </a>
-      <a class="project" href="https://agenthelpjob.com" target="_blank" rel="noopener">
+      <a class="work-card" href="https://agenthelpjob.com" target="_blank" rel="noopener">
+        <div class="work-thumb work-thumb-2"><span>AH</span></div>
         <h3>AgentHelpJob</h3>
-        <p>求职辅助 Agent · JD 解析 / 简历匹配 / 材料生成 / 投递追踪。</p>
-        <span class="link">agenthelpjob.com →</span>
+        <p data-i18n-zh="求职辅助 Agent · JD 解析 → 简历匹配 → 材料生成 → 人工确认 → 投递追踪" data-i18n-en="Job-search agent · JD parse → resume match → doc generation → confirm → tracking">求职辅助 Agent · JD 解析 → 简历匹配 → 材料生成 → 人工确认 → 投递追踪</p>
+        <span class="work-link">agenthelpjob.com ↗</span>
       </a>
-      <div class="project">
-        <h3>arkcli BP eval-kit</h3>
-        <p>字节 arkcli BytePlus 版评测框架 · 22 skill × 215 case · 3 版 pass rate。08-10 上线。</p>
-        <span class="link muted">byted internal · code.byted.org</span>
+      <a class="work-card" href="https://github.com/emptyteabot/career-log" target="_blank" rel="noopener">
+        <div class="work-thumb work-thumb-3"><span>◐</span></div>
+        <h3>career-log</h3>
+        <p data-i18n-zh="你现在看的这个 · 每天扫飞书 + 拉 MR + 备份记忆 + 编译 Typst + 部署 Pages" data-i18n-en="This site itself · nightly launchd → typst → GitHub Pages · 48 daily résumé snapshots">你现在看的这个 · 每天扫飞书 + 拉 MR + 备份记忆 + 编译 Typst + 部署 Pages</p>
+        <span class="work-link">github.com/emptyteabot/career-log ↗</span>
+      </a>
+      <div class="work-card static">
+        <div class="work-thumb work-thumb-4"><span>μ</span></div>
+        <h3>Multi-Agent Eval <span class="pill">DeepWisdom</span></h3>
+        <p data-i18n-zh="4 架构 × 300 样本 · Wilson CI · paired bootstrap · McNemar · 结论：5-agent majority 只在错误相关性 ρ < 0.42 时 Pareto 优" data-i18n-en="4 architectures × 300 samples · Wilson CI · paired bootstrap · McNemar · Finding: 5-agent majority is Pareto-optimal only when calibration error correlation ρ < 0.42">4 架构 × 300 样本 · Wilson CI · paired bootstrap · McNemar · 结论：5-agent majority 只在错误相关性 ρ < 0.42 时 Pareto 优</p>
+        <span class="work-link muted">DeepWisdom / MetaGPT · 2026 Q1</span>
       </div>
-      <div class="project">
-        <h3>Multi-Agent 可靠性评测</h3>
-        <p>80 校准 + 220 测试样本 · single / majority / log-odds / debate 四架构对照 · Wilson CI + McNemar test。</p>
-        <span class="link muted">DeepWisdom (MetaGPT) 内部</span>
-      </div>
-      <div class="project">
+      <div class="work-card static">
+        <div class="work-thumb work-thumb-5"><span>◊</span></div>
         <h3>yinghua-cortex</h3>
-        <p>飞书签名 Agent · Mac launchd 15min tick · 自动扫消息 + 摘要 + 决策提示。</p>
-        <span class="link muted">personal daemon</span>
+        <p data-i18n-zh="个人签名 Agent · Mac launchd 15min tick · 扫飞书 + 摘要 + 决策提示 · 离线跑" data-i18n-en="Personal signing agent · Mac launchd 15min tick · scan Lark + summarize + surface decisions · offline">个人签名 Agent · Mac launchd 15min tick · 扫飞书 + 摘要 + 决策提示 · 离线跑</p>
+        <span class="work-link muted">personal daemon</span>
       </div>
-      <a class="project" href="https://github.com/emptyteabot/career-log" target="_blank" rel="noopener">
-        <h3>career-log（本站）</h3>
-        <p>每日快照 + 简历自动生成 + PDF 归档 + GitHub Pages · 你现在看的这个东西的源码。</p>
-        <span class="link">github.com/emptyteabot/career-log →</span>
-      </a>
+      <div class="work-card static">
+        <div class="work-thumb work-thumb-6"><span>Fe</span></div>
+        <h3 data-i18n-zh="铁矿石量化预测" data-i18n-en="Iron-ore forecasting">铁矿石量化预测</h3>
+        <p data-i18n-zh="卓创资讯 · LightGBM + Optuna · 自研 未来函数自动检测 Agent + Code Compliance Agent" data-i18n-en="卓创资讯 · LightGBM + Optuna · self-built "unknown-future function" detector agent + Code Compliance agent">卓创资讯 · LightGBM + Optuna · 自研 未来函数自动检测 Agent + Code Compliance Agent</p>
+        <span class="work-link muted">2025.07 - 2025.12</span>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- STORY -->
-  <section id="story" class="section story">
-    <div class="section-head">
-      <span class="section-tag">05 · 关于我</span>
-      <h2>Story</h2>
-    </div>
-    <div class="story-body">
-      <p>贵州六盘水人，父母外出务工，妹妹 5 岁。厦门大学经济学院经济统计学 2024 级在读。从大一暑假开始连续 4 段实习自己养自己。</p>
-      <p>选做 AI 工程 / Agent 方向，不是因为热门，是因为它是唯一一个我可以<span class="hl">用大二的时间做出大四的东西</span>的地方。用 Claude Code / Codex CLI 每天做真交付，做完还在小红书 <a href="https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9" target="_blank" rel="noopener">ian (420404210)</a> 讲给别人 —— 179 篇 · 48.4 万曝光 · 979 垂直开发者粉。</p>
-      <p>这个网站是自动生成的：每天凌晨扫飞书消息、拉 code.byted.org MR 列表、备份记忆、重新 render Typst 简历、编译 PDF、push 到 GitHub Pages。<span class="hl">离职当天我可以关电脑走人，历史全在仓库里。</span></p>
-      <p class="story-quote">"能跑起来 + 数据说话 + 讲清楚" —— 三件事。</p>
-    </div>
-  </section>
+<!-- STORY -->
+<section id="story" class="section">
+  <div class="section-inner narrow">
+    <p class="section-tag" data-i18n-zh="04 · 关于我" data-i18n-en="04 · About">04 · 关于我</p>
+    <h2 data-i18n-zh="来自贵州六盘水的普通大二学生" data-i18n-en="A sophomore from a mountain city in Guizhou">来自贵州六盘水的普通大二学生</h2>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section contact">
-    <div class="section-head">
-      <span class="section-tag">06 · 联系</span>
-      <h2>Reach out</h2>
-      <p class="section-sub">在招 / 猎头 / 合作 / 想聊都欢迎，24 小时内回。</p>
-    </div>
-    <div class="contact-grid">
-      <a class="contact-card" href="mailto:13398580812@163.com?subject=[career-log]%20&body=%E4%BD%A0%E5%A5%BD%E9%99%88%E7%9B%88%E6%A1%A6%EF%BC%8C%E6%88%91%E6%98%AF%20...">
-        <div class="contact-icon">✉</div>
-        <div class="contact-label">Email</div>
-        <div class="contact-value">13398580812@163.com</div>
-      </a>
-      <a class="contact-card" href="tel:+8613398580812">
-        <div class="contact-icon">☎</div>
-        <div class="contact-label">Phone / WeChat</div>
-        <div class="contact-value">13398580812</div>
-      </a>
-      <a class="contact-card" href="https://github.com/emptyteabot" target="_blank" rel="noopener">
-        <div class="contact-icon">◈</div>
-        <div class="contact-label">GitHub</div>
-        <div class="contact-value">emptyteabot</div>
-      </a>
-      <a class="contact-card" href="https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9" target="_blank" rel="noopener">
-        <div class="contact-icon">◉</div>
-        <div class="contact-label">小红书</div>
-        <div class="contact-value">ian (420404210)</div>
-      </a>
-    </div>
-  </section>
-</main>
+    <div class="story">
+      <p data-i18n-zh="我在 <em>贵州六盘水</em> 出生长大 —— 一座以煤矿而不是以编译器闻名的山城。父母外出务工，妹妹 5 岁。从大一暑假起我用连续 4 段实习自己养自己。" data-i18n-en="I was born and raised in <em>Guizhou · Liupanshui</em> — a mountain city better known for coal than for compilers. My parents are migrant workers; my younger sister is 5. I've been paying my own way through school with internships since freshman-year summer.">我在 <em>贵州六盘水</em> 出生长大 —— 一座以煤矿而不是以编译器闻名的山城。父母外出务工，妹妹 5 岁。从大一暑假起我用连续 4 段实习自己养自己。</p>
 
+      <p data-i18n-zh="厦大经济统计学专业训练让我不轻信点估计 —— 下一个直觉是 <em>先算一下置信区间</em>。也教会我一件事：如果数字复现不出来，那个数字就不属于你。这两条现在直接指导我做 harness 工程。" data-i18n-en="Economic Statistics at Xiamen U trained me to distrust point estimates — my next instinct is to <em>reach for a confidence interval</em>. It also taught me: if you can't reproduce the number, you don't own the number. Both directly inform how I do harness engineering today.">厦大经济统计学专业训练让我不轻信点估计 —— 下一个直觉是 <em>先算一下置信区间</em>。也教会我一件事：如果数字复现不出来，那个数字就不属于你。这两条现在直接指导我做 harness 工程。</p>
+
+      <p data-i18n-zh="我对 Agent 工程里那些不性感的部分特别感兴趣 —— tool call 会怎么失败、context 会怎么漂、harness 在模型回来一堆乱码 JSON 时怎么恢复、v11 到底比 v10 好多少（不骗自己）。这些都是部署之后才知道的事。" data-i18n-en="I'm interested in the mundane parts of agent engineering — how tool calls fail, how contexts drift, how a harness recovers when the model returns garbled JSON, whether v11 is <em>actually</em> better than v10. The parts you find out only when you deploy.">我对 Agent 工程里那些不性感的部分特别感兴趣 —— tool call 会怎么失败、context 会怎么漂、harness 在模型回来一堆乱码 JSON 时怎么恢复、v11 到底比 v10 好多少（不骗自己）。这些都是部署之后才知道的事。</p>
+
+      <p data-i18n-zh="业余在小红书 <a href='https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9'>ian · 420404210</a> 输出 179 篇 · 48.4 万曝光 · 3.72 万互动 · 979 垂直开发者粉。写过的东西：Claude Code / Codex / Cursor 实战、Multi-Agent 边界、Vibe Coding 案例。" data-i18n-en="I write on 小红书 <a href='https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9'>ian · 420404210</a> — 179 posts, 484k impressions, 37.2k interactions, 979 dev followers. Topics: Claude Code / Codex / Cursor field notes, multi-agent boundaries, Vibe Coding case studies.">业余在小红书 <a href="https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9">ian · 420404210</a> 输出 179 篇 · 48.4 万曝光 · 3.72 万互动 · 979 垂直开发者粉。写过的东西：Claude Code / Codex / Cursor 实战、Multi-Agent 边界、Vibe Coding 案例。</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <div class="section-inner">
+    <p class="section-tag" data-i18n-zh="05 · 联系" data-i18n-en="05 · Contact">05 · 联系</p>
+    <h2 data-i18n-zh="想聊 · 招聘 · 猎头 · 合作 · 24 小时内回" data-i18n-en="Hiring · headhunting · collab · always replies within 24h">想聊 · 招聘 · 猎头 · 合作 · 24 小时内回</h2>
+
+    <div class="contact-cta">
+      <a class="btn primary big" href="mailto:13398580812@163.com?subject=%5Bhire%5D%20Ian%20Chen&body=Hi%20Ian%2C%0A%0A">
+        <span data-i18n-zh="发邮件" data-i18n-en="Send email">发邮件</span> · 13398580812@163.com
+      </a>
+    </div>
+
+    <div class="contact-list">
+      <div class="contact-item">
+        <div class="ci-label">Email</div>
+        <a class="ci-value" href="mailto:13398580812@163.com">13398580812@163.com</a>
+      </div>
+      <div class="contact-item">
+        <div class="ci-label">Phone / WeChat</div>
+        <a class="ci-value" href="tel:+8613398580812">13398580812</a>
+      </div>
+      <div class="contact-item">
+        <div class="ci-label">GitHub</div>
+        <a class="ci-value" href="https://github.com/emptyteabot" target="_blank" rel="noopener">emptyteabot</a>
+      </div>
+      <div class="contact-item">
+        <div class="ci-label" data-i18n-zh="小红书" data-i18n-en="Xiaohongshu">小红书</div>
+        <a class="ci-value" href="https://www.xiaohongshu.com/user/profile/6579f1e50000000030008ff9" target="_blank" rel="noopener">ian · 420404210</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARCHIVE -->
+<section id="archive" class="section archive-section">
+  <div class="section-inner">
+    <p class="section-tag" data-i18n-zh="06 · 简历档案" data-i18n-en="06 · Résumé archive">06 · 简历档案</p>
+    <h2 data-i18n-zh="每天一份 · 从入职第 1 天开始" data-i18n-en="One per day · from day 1">每天一份 · 从入职第 1 天开始</h2>
+    <p class="section-sub" data-i18n-zh="curl 友好：emptyteabot.github.io/career-log/resume/&lt;date&gt;-general.pdf" data-i18n-en="curl-friendly: emptyteabot.github.io/career-log/resume/&lt;date&gt;-general.pdf">curl 友好：<code>emptyteabot.github.io/career-log/resume/&lt;date&gt;-general.pdf</code></p>
+
+    <ul class="archive-list" id="archive-list"></ul>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-inner">
-    <span>© 2026 陈盈桦 · career-log</span>
-    <span>Automatically updated · Last: <time id="last-snap-footer">2026-08-03</time></span>
-    <a href="https://github.com/emptyteabot/career-log" target="_blank" rel="noopener">Source ↗</a>
+    <p>
+      <span data-i18n-zh="© 2026 陈盈桦 · 每晚自动 rebuild" data-i18n-en="© 2026 Ian Chen · rebuilt nightly">© 2026 陈盈桦 · 每晚自动 rebuild</span>
+      <span class="sep">·</span>
+      <span data-i18n-zh="最新快照" data-i18n-en="Latest snapshot">最新快照</span> <time id="last-snap">2026-08-03</time>
+      <span class="sep">·</span>
+      <a href="https://github.com/emptyteabot/career-log" target="_blank" rel="noopener" data-i18n-zh="源码" data-i18n-en="Source">源码</a>
+    </p>
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js" defer></script>
 <script src="assets/main.js" defer></script>
 </body>
 </html>
