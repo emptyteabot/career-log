@@ -8,7 +8,7 @@ on:
     - cron: '0 19 * * *'  # UTC 19:00 = Beijing 03:00 daily
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -21,20 +21,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Install typst
         run: |
-          curl -fsSL https://github.com/typst/typst/releases/download/v0.13.0/typst-x86_64-unknown-linux-musl.tar.xz -o typst.tar.xz
-          tar -xf typst.tar.xz
-          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/
+          curl -fsSL https://github.com/typst/typst/releases/download/v0.13.0/typst-x86_64-unknown-linux-musl.tar.xz -o /tmp/typst.tar.xz
+          tar -xf /tmp/typst.tar.xz -C /tmp
+          sudo mv /tmp/typst-x86_64-unknown-linux-musl/typst /usr/local/bin/
           typst --version
 
       - name: Fetch Noto CJK font
         run: |
-          mkdir -p fonts
-          curl -fsSL "https://github.com/notofonts/noto-cjk/raw/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf" -o fonts/NotoSansCJKsc-Regular.otf || true
-          curl -fsSL "https://github.com/notofonts/noto-cjk/raw/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Bold.otf"    -o fonts/NotoSansCJKsc-Bold.otf    || true
-          curl -fsSL "https://github.com/notofonts/noto-cjk/raw/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Medium.otf"  -o fonts/NotoSansCJKsc-Medium.otf  || true
+          mkdir -p /tmp/fonts
+          curl -fsSL "https://github.com/notofonts/noto-cjk/raw/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf" -o /tmp/fonts/NotoSansCJKsc-Regular.otf
+          curl -fsSL "https://github.com/notofonts/noto-cjk/raw/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Bold.otf"    -o /tmp/fonts/NotoSansCJKsc-Bold.otf
+          curl -fsSL "https://github.com/notofonts/noto-cjk/raw/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Medium.otf"  -o /tmp/fonts/NotoSansCJKsc-Medium.otf
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -45,15 +47,17 @@ jobs:
         run: |
           TODAY=$(date +%Y-%m-%d)
           python3 scripts/build_resume.py --date "$TODAY"
-          typst compile --root . --font-path fonts templates/build/${TODAY}-general.typ resumes/${TODAY}-general.pdf || true
-          typst compile --root . --font-path fonts templates/build/${TODAY}-deepseek.typ resumes/${TODAY}-deepseek.pdf || true
+          typst compile --root . --font-path /tmp/fonts templates/build/${TODAY}-general.typ resumes/${TODAY}-general.pdf || true
+          typst compile --root . --font-path /tmp/fonts templates/build/${TODAY}-deepseek.typ resumes/${TODAY}-deepseek.pdf || true
+          typst compile --root . --font-path /tmp/fonts templates/mindmap-latest.typ resumes/${TODAY}-mindmap.pdf || true
           cp resumes/${TODAY}-*.pdf homepage/resume/ 2>/dev/null || true
 
-      - name: Refresh latest symlinks
+      - name: Refresh latest copies
         run: |
           TODAY=$(date +%Y-%m-%d)
           [ -f "homepage/resume/${TODAY}-general.pdf"  ] && cp "homepage/resume/${TODAY}-general.pdf"  homepage/resume/latest-general.pdf
           [ -f "homepage/resume/${TODAY}-deepseek.pdf" ] && cp "homepage/resume/${TODAY}-deepseek.pdf" homepage/resume/latest-deepseek.pdf
+          [ -f "homepage/resume/${TODAY}-mindmap.pdf"  ] && cp "homepage/resume/${TODAY}-mindmap.pdf"  homepage/resume/latest-mindmap.pdf
 
       - name: Update manifest
         run: python3 scripts/update_manifest.py
