@@ -23,3 +23,13 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Private memory (DO NOT COMMIT)
+memory-archive/
+private-memory-backup/
+memory/
+
+# Social scan & TS rewrite (working files)
+social-scan/
+ts-rewrite/node_modules/
+ts-rewrite/dist/
